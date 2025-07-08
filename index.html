@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OverBerry - Do coração da Amazônia direto para sua rotina</title>
+    <meta name="description" content="Açaí liofilizado em pó 100% puro, direto da Amazônia. Energia natural, sem açúcar, rico em antioxidantes. Compre agora pelo WhatsApp!">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <meta name="theme-color" content="#6B2C91">
+</head>
+<body>
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress"></div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>Over<span>Berry</span></h1>
+            </div>
+            <nav class="nav">
+                <a href="#produto" class="nav-link">Produto</a>
+                <a href="#beneficios" class="nav-link">Benefícios</a>
+                <a href="#como-usar" class="nav-link">Como Usar</a>
+                <a href="#sobre" class="nav-link">Sobre</a>
+                <a href="#faq" class="nav-link">FAQ</a>
+                <button class="theme-toggle" id="theme-toggle" aria-label="Alternar tema">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <a href="#" class="cta-btn-header" id="whatsapp-header">
+                    <i class="fab fa-whatsapp"></i>
+                    Compre Agora
+                </a>
+            </nav>
+            <div class="mobile-menu-toggle" id="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Floating WhatsApp Button -->
+    <div class="floating-whatsapp" id="floating-whatsapp">
+        <i class="fab fa-whatsapp"></i>
+        <div class="whatsapp-tooltip">
+            Faça seu pedido agora!
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="produto">
+        <div class="hero-video-bg">
+            <div class="animated-background">
+                <div class="floating-particle"></div>
+                <div class="floating-particle"></div>
+                <div class="floating-particle"></div>
+                <div class="floating-particle"></div>
+                <div class="floating-particle"></div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <div class="hero-badge">
+                        <i class="fas fa-leaf"></i>
+                        <span>100% Natural da Amazônia</span>
+                    </div>
+                    <h2 class="hero-title">
+                        Do coração da <span class="highlight-green">Amazônia</span><br>
+                        direto para sua <span class="highlight">rotina</span>
+                    </h2>
+                    <p class="hero-subtitle">
+                        Desperte sua energia natural com o açaí mais puro do Brasil. Cada colher é uma conexão autêntica com a floresta amazônica, trazendo vitalidade e sabor incomparável para o seu dia.
+                    </p>
+                    <div class="hero-features">
+                        <div class="feature-item">
+                            <i class="fas fa-heart-pulse"></i>
+                            <span>Energia Pura</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-shield-heart"></i>
+                            <span>Antioxidantes Naturais</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-clock-rotate-left"></i>
+                            <span>Preparo em Segundos</span>
+                        </div>
+                    </div>
+                    <div class="hero-cta">
+                        <a href="#" class="cta-btn-primary hero-cta-btn" id="whatsapp-hero">
+                            <i class="fab fa-whatsapp"></i>
+                            <span class="btn-text">Quero meu OverBerry</span>
+                            <span class="btn-subtext">Entrega em 24h</span>
+                        </a>
+                        <div class="social-proof">
+                            <div class="rating-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p>+2.500 clientes satisfeitos</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="product-showcase">
+                        <div class="product-glow"></div>
+                        <div class="product-image">
+                            <div class="acai-berry-animated">
+                                <div class="berry-main"></div>
+                                <div class="berry-leaf"></div>
+                                <div class="berry-sparkle"></div>
+                            </div>
+                            <div class="powder-stream"></div>
+                        </div>
+                        <div class="product-package">
+                            <div class="package-front">
+                                <div class="package-header">
+                                    <h3>Açaí Liofilizado<br>em pó</h3>
+                                    <div class="sustainability-badge">
+                                        <i class="fas fa-leaf"></i>
+                                        SUSTENTÁVEL
+                                    </div>
+                                </div>
+                                <div class="package-berry">
+                                    <div class="berry-icon"></div>
+                                </div>
+                                <div class="package-logo">
+                                    <h4>Over Berry</h4>
+                                </div>
+                                <div class="package-badges">
+                                    <div class="badge">100% NATURAL</div>
+                                    <div class="badge">FREEZE DRIED</div>
+                                    <div class="badge">RICO EM ANTIOXIDANTES</div>
+                                </div>
+                                <div class="package-weight">100g</div>
+                                <div class="package-qr">
+                                    <div class="qr-code"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefícios Section -->
+    <section class="beneficios" id="beneficios">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Por que escolher o <span class="highlight">OverBerry</span>?</h2>
+                <p class="section-subtitle">Cada benefício pensado para transformar sua rotina com energia natural</p>
+            </div>
+            <div class="beneficios-grid">
+                <div class="beneficio-card" data-tilt>
+                    <div class="beneficio-icon style-filled">
+                        <i class="fas fa-ban"></i>
+                        <div class="icon-bg"></div>
+                    </div>
+                    <h3>Zero Açúcar Adicionado</h3>
+                    <p>Apenas a doçura natural da fruta amazônica, sem conservantes ou aditivos artificiais que comprometem sua saúde.</p>
+                    <div class="card-hover-effect"></div>
+                </div>
+                <div class="beneficio-card" data-tilt>
+                    <div class="beneficio-icon style-outline">
+                        <i class="far fa-bolt"></i>
+                        <div class="icon-bg"></div>
+                    </div>
+                    <h3>Energia Sustentada</h3>
+                    <p>Combustível natural que libera energia gradualmente, mantendo você ativo e focado por horas sem picos de glicose.</p>
+                    <div class="card-hover-effect"></div>
+                </div>
+                <div class="beneficio-card" data-tilt>
+                    <div class="beneficio-icon style-filled">
+                        <i class="fas fa-shield-heart"></i>
+                        <div class="icon-bg"></div>
+                    </div>
+                    <h3>Antioxidantes Poderosos</h3>
+                    <p>Rica concentração de antocianinas que protegem suas células, fortalecem a imunidade e promovem longevidade.</p>
+                    <div class="card-hover-effect"></div>
+                </div>
+                <div class="beneficio-card" data-tilt>
+                    <div class="beneficio-icon style-outline">
+                        <i class="far fa-clock"></i>
+                        <div class="icon-bg"></div>
+                    </div>
+                    <h3>Praticidade Total</h3>
+                    <p>Dissolve instantaneamente em qualquer líquido. Transforme água comum em uma bebida energética natural em segundos.</p>
+                    <div class="card-hover-effect"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Como Usar Section -->
+    <section class="como-usar" id="como-usar">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Transforme seu <span class="highlight">OverBerry</span> em delícias</h2>
+                <p class="section-subtitle">Três formas simples de incorporar energia amazônica no seu dia</p>
+            </div>
+            
+            <!-- Desktop Grid -->
+            <div class="receitas-grid desktop-only">
+                <div class="receita-card">
+                    <div class="receita-mockup">
+                        <div class="mockup-smoothie">
+                            <div class="glass">
+                                <div class="smoothie-layer purple"></div>
+                                <div class="smoothie-layer pink"></div>
+                                <div class="smoothie-topping"></div>
+                            </div>
+                            <div class="straw"></div>
+                        </div>
+                    </div>
+                    <div class="receita-content">
+                        <h3>Smoothie Energético</h3>
+                        <p>1 colher de OverBerry + banana + leite vegetal + gelo. O combustível perfeito para começar o dia com energia!</p>
+                        <div class="receita-difficulty">
+                            <span class="difficulty easy">Fácil</span>
+                            <span class="time">2 min</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="receita-card">
+                    <div class="receita-mockup">
+                        <div class="mockup-bowl">
+                            <div class="bowl">
+                                <div class="acai-base"></div>
+                                <div class="topping banana"></div>
+                                <div class="topping granola"></div>
+                                <div class="topping berries"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="receita-content">
+                        <h3>Açaí Bowl Autêntico</h3>
+                        <p>2 colheres de OverBerry + água gelada + suas frutas favoritas. Crie o bowl dos seus sonhos com sabor autêntico!</p>
+                        <div class="receita-difficulty">
+                            <span class="difficulty medium">Médio</span>
+                            <span class="time">5 min</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="receita-card">
+                    <div class="receita-mockup">
+                        <div class="mockup-drink">
+                            <div class="bottle">
+                                <div class="drink-content"></div>
+                                <div class="bubbles"></div>
+                            </div>
+                            <div class="bottle-cap"></div>
+                        </div>
+                    </div>
+                    <div class="receita-content">
+                        <h3>Drink Refrescante</h3>
+                        <p>1 colher de OverBerry + água gelada + limão. Hidratação saudável com o poder energético da Amazônia!</p>
+                        <div class="receita-difficulty">
+                            <span class="difficulty easy">Fácil</span>
+                            <span class="time">1 min</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mobile Carousel -->
+            <div class="receitas-carousel mobile-only">
+                <div class="carousel-container">
+                    <div class="carousel-track" id="carousel-track">
+                        <!-- Same cards as above but in carousel format -->
+                        <div class="carousel-slide">
+                            <div class="receita-card">
+                                <div class="receita-mockup">
+                                    <div class="mockup-smoothie">
+                                        <div class="glass">
+                                            <div class="smoothie-layer purple"></div>
+                                            <div class="smoothie-layer pink"></div>
+                                            <div class="smoothie-topping"></div>
+                                        </div>
+                                        <div class="straw"></div>
+                                    </div>
+                                </div>
+                                <div class="receita-content">
+                                    <h3>Smoothie Energético</h3>
+                                    <p>1 colher de OverBerry + banana + leite vegetal + gelo. O combustível perfeito!</p>
+                                    <div class="receita-difficulty">
+                                        <span class="difficulty easy">Fácil</span>
+                                        <span class="time">2 min</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-slide">
+                            <div class="receita-card">
+                                <div class="receita-mockup">
+                                    <div class="mockup-bowl">
+                                        <div class="bowl">
+                                            <div class="acai-base"></div>
+                                            <div class="topping banana"></div>
+                                            <div class="topping granola"></div>
+                                            <div class="topping berries"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="receita-content">
+                                    <h3>Açaí Bowl Autêntico</h3>
+                                    <p>2 colheres de OverBerry + água gelada + suas frutas favoritas. Sabor autêntico!</p>
+                                    <div class="receita-difficulty">
+                                        <span class="difficulty medium">Médio</span>
+                                        <span class="time">5 min</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-slide">
+                            <div class="receita-card">
+                                <div class="receita-mockup">
+                                    <div class="mockup-drink">
+                                        <div class="bottle">
+                                            <div class="drink-content"></div>
+                                            <div class="bubbles"></div>
+                                        </div>
+                                        <div class="bottle-cap"></div>
+                                    </div>
+                                </div>
+                                <div class="receita-content">
+                                    <h3>Drink Refrescante</h3>
+                                    <p>1 colher de OverBerry + água gelada + limão. Hidratação saudável!</p>
+                                    <div class="receita-difficulty">
+                                        <span class="difficulty easy">Fácil</span>
+                                        <span class="time">1 min</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-nav">
+                    <button class="carousel-btn prev" id="carousel-prev">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <div class="carousel-dots" id="carousel-dots">
+                        <span class="dot active"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                    <button class="carousel-btn next" id="carousel-next">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Depoimentos Section -->
+    <section class="depoimentos">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Clientes apaixonados pelo <span class="highlight">sabor autêntico</span></h2>
+                <p class="section-subtitle">Histórias reais de transformação e energia renovada</p>
+            </div>
+            <div class="depoimentos-grid">
+                <div class="depoimento-card">
+                    <div class="quote-icon">💜</div>
+                    <div class="stars-enhanced">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span class="rating-text">Perfeito!</span>
+                    </div>
+                    <p>"Finalmente encontrei um açaí que tem o sabor verdadeiro! Sinto a energia da floresta em cada gole. Meu smoothie matinal nunca mais foi o mesmo."</p>
+                    <div class="depoimento-author">
+                        <div class="author-avatar">
+                            <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHZpZXdCb3g9IjAgMCA0MCA0MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGNpcmNsZSBjeD0iMjAiIGN5PSIyMCIgcj0iMjAiIGZpbGw9IiNGRkJGRkYiLz4KPGNpcmNsZSBjeD0iMjAiIGN5PSIxNiIgcj0iNiIgZmlsbD0iIzZCMkM5MSIvPgo8cGF0aCBkPSJNMTAgMzJjMC02IDQtMTAgMTAtMTBzMTAgNCAxMCAxMCIgZmlsbD0iIzZCMkM5MSIvPgo8L3N2Zz4K" alt="Maria Silva">
+                        </div>
+                        <div class="author-info">
+                            <strong>Maria Silva</strong>
+                            <span>Nutricionista • São Paulo, SP</span>
+                            <div class="verified-badge">
+                                <i class="fas fa-check-circle"></i>
+                                Cliente verificado
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="depoimento-card">
+                    <div class="quote-icon">🌿</div>
+                    <div class="stars-enhanced">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span class="rating-text">Incrível!</span>
+                    </div>
+                    <p>"Como atleta, preciso de energia limpa e duradoura. O OverBerry revolucionou meus treinos - zero química, só potência amazônica pura!"</p>
+                    <div class="depoimento-author">
+                        <div class="author-avatar">
+                            <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHZpZXdCb3g9IjAgMCA0MCA0MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGNpcmNsZSBjeD0iMjAiIGN5PSIyMCIgcj0iMjAiIGZpbGw9IiNFMEY3RkEiLz4KPGNpcmNsZSBjeD0iMjAiIGN5PSIxNiIgcj0iNiIgZmlsbD0iIzJENUEyNyIvPgo8cGF0aCBkPSJNMTAgMzJjMC02IDQtMTAgMTAtMTBzMTAgNCAxMCAxMCIgZmlsbD0iIzJENUEyNyIvPgo8L3N2Zz4K" alt="João Santos">
+                        </div>
+                        <div class="author-info">
+                            <strong>João Santos</strong>
+                            <span>Triatleta • Rio de Janeiro, RJ</span>
+                            <div class="verified-badge">
+                                <i class="fas fa-check-circle"></i>
+                                Cliente verificado
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="depoimento-card">
+                    <div class="quote-icon">⚡</div>
+                    <div class="stars-enhanced">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span class="rating-text">Top!</span>
+                    </div>
+                    <p>"Qualidade excepcional e praticidade única! Transformou minha rotina corrida. Agora tenho energia natural disponível a qualquer hora do dia."</p>
+                    <div class="depoimento-author">
+                        <div class="author-avatar">
+                            <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHZpZXdCb3g9IjAgMCA0MCA0MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGNpcmNsZSBjeD0iMjAiIGN5PSIyMCIgcj0iMjAiIGZpbGw9IiNGQ0Y0RkYiLz4KPGNpcmNsZSBjeD0iMjAiIGN5PSIxNiIgcj0iNiIgZmlsbD0iIzhCNENCOCIvPgo8cGF0aCBkPSJNMTAgMzJjMC02IDQtMTAgMTAtMTBzMTAgNCAxMCAxMCIgZmlsbD0iIzhCNENCOCIvPgo8L3N2Zz4K" alt="Ana Costa">
+                        </div>
+                        <div class="author-info">
+                            <strong>Ana Costa</strong>
+                            <span>Empresária • Belo Horizonte, MG</span>
+                            <div class="verified-badge">
+                                <i class="fas fa-check-circle"></i>
+                                Cliente verificado
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre Section -->
+    <section class="sobre" id="sobre">
+        <div class="amazonia-background"></div>
+        <div class="container">
+            <div class="sobre-content">
+                <div class="sobre-text">
+                    <h2 class="section-title">A jornada do <span class="highlight">OverBerry</span></h2>
+                    <p>Nascemos da paixão pela Amazônia e pela qualidade nutricional incomparável do açaí. Nossa missão é conectar você à energia ancestral da floresta, preservando cada nutriente através da mais avançada tecnologia de liofilização.</p>
+                    <p>Cada embalagem de OverBerry carrega não apenas açaí, mas uma promessa: levar até você toda a vitalidade da maior floresta tropical do planeta, de forma sustentável e responsável.</p>
+                    
+                    <div class="journey-timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-icon">
+                                <i class="fas fa-seedling"></i>
+                            </div>
+                            <div class="timeline-content">
+                                <h4>Colheita Sustentável</h4>
+                                <p>Açaí selecionado no coração da Amazônia</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-icon">
+                                <i class="fas fa-snowflake"></i>
+                            </div>
+                            <div class="timeline-content">
+                                <h4>Liofilização Avançada</h4>
+                                <p>Processo que preserva 100% dos nutrientes</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-icon">
+                                <i class="fas fa-box"></i>
+                            </div>
+                            <div class="timeline-content">
+                                <h4>Embalagem Sustentável</h4>
+                                <p>Proteção total com responsabilidade ambiental</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-icon">
+                                <i class="fas fa-heart"></i>
+                            </div>
+                            <div class="timeline-content">
+                                <h4>Energia na sua Mesa</h4>
+                                <p>Vitalidade amazônica direto para você</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq" id="faq">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Dúvidas sobre o <span class="highlight">OverBerry</span>?</h2>
+                <p class="section-subtitle">Tudo que você precisa saber sobre nosso açaí em pó</p>
+            </div>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Como o OverBerry mantém todos os nutrientes do açaí fresco?</h3>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Utilizamos a liofilização, um processo que remove apenas a água mantendo 100% dos nutrientes, antioxidantes e sabor original. É como se o açaí fosse "pausado" no tempo no seu pico nutricional.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Qual a diferença entre açaí liofilizado e açaí comum?</h3>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>O açaí liofilizado concentra todos os benefícios sem aditivos, conservantes ou açúcar. Uma colher de OverBerry equivale ao poder nutricional de várias porções de açaí comum, com praticidade total.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Como devo armazenar meu OverBerry?</h3>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Mantenha em local seco e arejado, longe da luz solar direta. Após aberto, consuma em até 60 dias. A embalagem foi desenvolvida para preservar máxima qualidade e frescor.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Quantas porções posso fazer com uma embalagem de 100g?</h3>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Cada embalagem rende aproximadamente 50 porções (2g por porção para smoothies) ou 25 porções (4g por porção para açaí bowls). Depende da intensidade de sabor desejada.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>O OverBerry é adequado para crianças e idosos?</h3>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Sim! É 100% natural, sem açúcar adicionado ou conservantes. Ideal para toda família. Para crianças menores de 2 anos, consulte um pediatra antes do consumo.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Final Section -->
+    <section class="cta-final">
+        <div class="container">
+            <div class="cta-content">
+                <div class="urgency-badge">
+                    <i class="fas fa-clock"></i>
+                    <span>Oferta por tempo limitado</span>
+                </div>
+                <h2>Desperte sua energia <span class="highlight">amazônica</span> hoje mesmo</h2>
+                <p>Junte-se a milhares de brasileiros que já transformaram sua rotina com o açaí mais puro do país. Energia natural, sabor autêntico, praticidade total.</p>
+                <div class="cta-buttons">
+                    <a href="#" class="cta-btn-primary large pulse-animation" id="whatsapp-final">
+                        <i class="fab fa-whatsapp"></i>
+                        <span class="btn-text">Quero meu OverBerry agora</span>
+                        <span class="btn-subtext">Frete grátis para todo Brasil</span>
+                    </a>
+                </div>
+                <div class="cta-guarantees">
+                    <div class="guarantee-item">
+                        <i class="fas fa-truck-fast"></i>
+                        <span>Entrega em 24-48h</span>
+                    </div>
+                    <div class="guarantee-item">
+                        <i class="fas fa-shield-check"></i>
+                        <span>Compra 100% segura</span>
+                    </div>
+                    <div class="guarantee-item">
+                        <i class="fas fa-medal"></i>
+                        <span>Satisfação garantida</span>
+                    </div>
+                </div>
+                <div class="stock-indicator">
+                    <div class="stock-bar">
+                        <div class="stock-fill"></div>
+                    </div>
+                    <p>⚡ Apenas <strong>47 unidades</strong> restantes em estoque</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-main">
+                    <div class="footer-logo">
+                        <h3>Over<span>Berry</span></h3>
+                        <p>Energia natural da Amazônia brasileira</p>
+                        
+                        <div class="trust-seals">
+                            <div class="seal">
+                                <i class="fas fa-shield-check"></i>
+                                <span>Compra Segura</span>
+                            </div>
+                            <div class="seal">
+                                <i class="fas fa-leaf"></i>
+                                <span>Feito na Amazônia</span>
+                            </div>
+                            <div class="seal">
+                                <i class="fas fa-clock"></i>
+                                <span>Estoque Limitado</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="footer-links">
+                        <div class="footer-section">
+                            <h4>Contato</h4>
+                            <a href="#" id="whatsapp-footer">
+                                <i class="fab fa-whatsapp"></i>
+                                WhatsApp Vendas
+                            </a>
+                            <a href="mailto:contato@overberry.com.br">
+                                <i class="fas fa-envelope"></i>
+                                contato@overberry.com.br
+                            </a>
+                            <a href="tel:+5511999999999">
+                                <i class="fas fa-phone"></i>
+                                (11) 99999-9999
+                            </a>
+                        </div>
+                        
+                        <div class="footer-section">
+                            <h4>Redes Sociais</h4>
+                            <a href="#" target="_blank">
+                                <i class="fab fa-instagram"></i>
+                                @overberry.oficial
+                            </a>
+                            <a href="#" target="_blank">
+                                <i class="fab fa-tiktok"></i>
+                                @overberryoficial
+                            </a>
+                            <a href="#" target="_blank">
+                                <i class="fab fa-youtube"></i>
+                                OverBerry Brasil
+                            </a>
+                        </div>
+                        
+                        <div class="footer-section">
+                            <h4>Informações</h4>
+                            <a href="#">Política de Entrega</a>
+                            <a href="#">Política de Devolução</a>
+                            <a href="#">Termos de Uso</a>
+                            <a href="#">Política de Privacidade</a>
+                        </div>
+                        
+                        <div class="footer-section">
+                            <h4>Certificações</h4>
+                            <div class="certifications">
+                                <div class="cert-badge">
+                                    <i class="fas fa-certificate"></i>
+                                    <span>ANVISA</span>
+                                </div>
+                                <div class="cert-badge">
+                                    <i class="fas fa-leaf"></i>
+                                    <span>Orgânico</span>
+                                </div>
+                                <div class="cert-badge">
+                                    <i class="fas fa-recycle"></i>
+                                    <span>Sustentável</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="footer-bottom">
+                    <div class="footer-bottom-content">
+                        <p>&copy; 2025 OverBerry. Todos os direitos reservados.</p>
+                        <p>🇧🇷 Indústria Brasileira - Feito com ❤️ na Amazônia</p>
+                    </div>
+                    <div class="footer-certifications">
+                        <div class="ssl-badge">
+                            <i class="fas fa-lock"></i>
+                            <span>SSL Seguro</span>
+                        </div>
+                        <div class="payment-methods">
+                            <i class="fab fa-cc-visa"></i>
+                            <i class="fab fa-cc-mastercard"></i>
+                            <i class="fab fa-pix"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
