@@ -3,357 +3,333 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OverBerry - Açaí Liofilizado Premium | 100% Natural</title>
-    <meta name="description" content="Descubra o poder do açaí puro liofilizado OverBerry. 100% natural, rico em antioxidantes e sem aditivos. Qualidade premium em embalagens de 100g.">
-    <meta name="keywords" content="açaí liofilizado, açaí natural, antioxidantes, superfood, OverBerry">
-    
-    <!-- Preconnect for faster font loading -->
+    <title>Overberry - Açaí Liofilizado Premium</title>
+    <meta name="description" content="Adicione açaí em suas receitas favoritas. Nutritivo, saboroso e cheio de energia natural.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <!-- Link to external CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Header -->
-    <header class="header" id="header">
-        <nav class="nav-container">
-            <div class="logo">OverBerry</div>
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Overberry</h2>
+            </div>
+            
             <ul class="nav-menu" id="nav-menu">
-                <li><a href="#home" class="nav-link">Home</a></li>
-                <li><a href="#produto" class="nav-link">Produto</a></li>
-                <li><a href="#beneficios" class="nav-link">Benefícios</a></li>
-                <li><a href="#como-usar" class="nav-link">Como Usar</a></li>
-                <li><a href="#onde-comprar" class="nav-link">Onde Comprar</a></li>
-                <li><a href="#contato" class="nav-link">Contato</a></li>
+                <li class="nav-item"><a href="#produto" class="nav-link">Produto</a></li>
+                <li class="nav-item"><a href="#beneficios" class="nav-link">Benefícios</a></li>
+                <li class="nav-item"><a href="#receitas" class="nav-link">Receitas</a></li>
+                <li class="nav-item"><a href="#sobre" class="nav-link">Sobre</a></li>
+                <li class="nav-item"><a href="#contato" class="nav-link">Contato</a></li>
             </ul>
-            <button class="mobile-menu" id="mobile-menu">
-                <i class="fas fa-bars"></i>
-            </button>
-        </nav>
-    </header>
+
+            <button class="cta-button desktop-only">Experimentar Agora</button>
+
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
 
     <!-- Hero Section -->
-    <section class="hero" id="home">
-        <div class="hero-particles" id="hero-particles"></div>
-        <div class="hero-content">
-            <h1 class="hero-logo">
-                xbweeuyodcvbiuyvdci7tyvcdeiv
-                <div class="falling-powder"></div>
-                <div class="falling-powder" style="animation-delay: 0.5s;"></div>
-                <div class="falling-powder" style="animation-delay: 1s;"></div>
-                <div class="falling-powder" style="animation-delay: 1.5s;"></div>
-                <div class="falling-powder" style="animation-delay: 2s;"></div>
-            </h1>
-            <p class="hero-subtitle">O verdadeiro açaí da Amazônia, agora em pó</p>
-            <p class="hero-description">Nutrição pura. Praticidade total.</p>
-            <a href="#produto" class="cta-button-hero">Quero meu OverBerry agora</a>
+    <section class="hero" id="produto">
+        <div class="hero-background">
+            <div class="floating-element element-1"></div>
+            <div class="floating-element element-2"></div>
+            <div class="floating-element element-3"></div>
         </div>
-    </section>
 
-    <!-- Product Section -->
-    <section class="section" id="produto">
-        <div class="container">
-            <h2 class="section-title fade-in">Nosso Produto</h2>
-            <p class="section-subtitle fade-in">Potência natural em cada colher. Toda a força do açaí amazônico preservada em embalagens práticas de 100g.</p>
-            
-            <div class="product-showcase">
-                <div class="product-image fade-in scale-in">
-                    <div class="product-mockup">
-                        <div class="package-3d">
-                            <div class="package-front">
-                                <div class="package-logo">OverBerry</div>
-                                <div class="package-title">Açaí Liofilizado</div>
-                                <div class="package-subtitle">em pó</div>
-                                <div class="package-weight">100g</div>
-                                <div class="acai-visual"></div>
-                            </div>
-                        </div>
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="gradient-text">Adicione açaí</span><br>
+                    <span class="dark-text">em suas receitas favoritas</span>
+                </h1>
+                
+                <p class="hero-subtitle">Nutritivo, saboroso e cheio de energia natural</p>
+                
+                <div class="products-showcase">
+                    <div class="product-item package-container">
+                        <img src="/placeholder.svg?height=400&width=300&text=Embalagem+Overberry" alt="Embalagem Overberry" class="package-img">
+                        <div class="product-badge">Novo!</div>
                     </div>
-                    <div class="product-glow"></div>
+                    <div class="product-item bowl-container">
+                        <img src="/placeholder.svg?height=300&width=250&text=Bowl+de+Açaí" alt="Bowl de Açaí" class="bowl-img">
+                    </div>
                 </div>
                 
-                <div class="product-info fade-in slide-in-right">
-                    <h3>Açaí 100% Puro da Amazônia</h3>
-                    <p class="product-highlight">Liofilizado para preservar cada nutriente</p>
-                    <p>Nosso açaí passa por um processo revolucionário de liofilização que preserva 100% dos nutrientes, sabor e cor natural da fruta, removendo apenas a água. O resultado é um pó concentrado com todo o poder nutricional do açaí fresco.</p>
-                    
-                    <div class="product-features">
-                        <div class="feature fade-in">
-                            <div class="feature-icon">
-                                <i class="fas fa-leaf"></i>
-                            </div>
-                            <div class="feature-text">100% Natural</div>
-                        </div>
-                        
-                        <div class="feature fade-in">
-                            <div class="feature-icon">
-                                <i class="fas fa-shield-alt"></i>
-                            </div>
-                            <div class="feature-text">Rico em Antioxidantes</div>
-                        </div>
-                        
-                        <div class="feature fade-in">
-                            <div class="feature-icon">
-                                <i class="fas fa-heart"></i>
-                            </div>
-                            <div class="feature-text">Alto Valor Nutricional</div>
-                        </div>
-                        
-                        <div class="feature fade-in">
-                            <div class="feature-icon">
-                                <i class="fas fa-ban"></i>
-                            </div>
-                            <div class="feature-text">Sem Aditivos</div>
-                        </div>
-                    </div>
-                    
-                    <a href="#onde-comprar" class="cta-button-strong">Comprar saúde pura</a>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary">
+                        Quero Experimentar
+                        <svg class="btn-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </button>
+                    <button class="btn btn-secondary">Ver Receitas</button>
                 </div>
             </div>
         </div>
+
+        <div class="scroll-indicator">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M6 9l6 6 6-6"/>
+            </svg>
+        </div>
     </section>
 
-    <!-- Why Freeze-Dried Section -->
-    <section class="section freeze-dried-section" id="beneficios">
+    <!-- Benefits Section -->
+    <section class="benefits" id="beneficios">
         <div class="container">
-            <h2 class="section-title fade-in">Por que Liofilizado?</h2>
-            <p class="section-subtitle fade-in">Descubra a ciência por trás da tecnologia mais avançada de preservação de alimentos</p>
-            
-            <div class="process-visual fade-in">
-                <div class="process-step">
-                    <div class="process-icon fresh">
-                        <i class="fas fa-seedling"></i>
-                    </div>
-                    <h4>Açaí Fresco</h4>
-                    <p>Colhido na Amazônia</p>
-                </div>
-                
-                <div class="process-arrow">
-                    <i class="fas fa-arrow-right"></i>
-                </div>
-                
-                <div class="process-step">
-                    <div class="process-icon freeze">
-                        <i class="fas fa-snowflake"></i>
-                    </div>
-                    <h4>Liofilização</h4>
-                    <p>Remoção da água preservando nutrientes</p>
-                </div>
-                
-                <div class="process-arrow">
-                    <i class="fas fa-arrow-right"></i>
-                </div>
-                
-                <div class="process-step">
-                    <div class="process-icon powder">
-                        <i class="fas fa-certificate"></i>
-                    </div>
-                    <h4>Pó 100% Puro</h4>
-                    <p>Concentrado e preservado</p>
-                </div>
+            <div class="section-header">
+                <h2 class="section-title gradient-text">Por que escolher Overberry?</h2>
+                <p class="section-subtitle">Nosso açaí liofilizado preserva todos os nutrientes e sabor do açaí fresco</p>
             </div>
-            
-            <div class="process-details">
-                <div class="detail-card fade-in">
-                    <div class="detail-icon">
-                        <i class="fas fa-snowflake"></i>
-                    </div>
-                    <h3>Congelamento Rápido</h3>
-                    <p>O açaí é congelado instantaneamente a -40°C, preservando sua estrutura celular e todos os nutrientes.</p>
-                </div>
-                
-                <div class="detail-card fade-in">
-                    <div class="detail-icon">
-                        <i class="fas fa-wind"></i>
-                    </div>
-                    <h3>Sublimação Controlada</h3>
-                    <p>A água é removida diretamente do estado sólido para gasoso em vácuo, mantendo a integridade do alimento.</p>
-                </div>
-                
-                <div class="detail-card fade-in">
-                    <div class="detail-icon">
-                        <i class="fas fa-gem"></i>
-                    </div>
-                    <h3>Pureza Máxima</h3>
-                    <p>Resultado: concentração de 10x mais nutrientes que o açaí comum, sem perder sabor ou propriedades.</p>
-                </div>
-            </div>
-            
+
             <div class="benefits-grid">
-                <div class="benefit-card fade-in">
-                    <div class="benefit-number">2</div>
-                    <h3>Anos de Validade</h3>
-                    <p>Mantém qualidade nutricional sem refrigeração</p>
+                <div class="benefit-card" data-aos="fade-up" data-delay="0">
+                    <div class="benefit-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+                        </svg>
+                    </div>
+                    <h3 class="benefit-title">Rico em Antioxidantes</h3>
+                    <p class="benefit-description">Combate os radicais livres e fortalece o sistema imunológico</p>
                 </div>
-                
-                <div class="benefit-card fade-in">
-                    <div class="benefit-number">10x</div>
-                    <h3>Mais Concentrado</h3>
-                    <p>1kg de açaí fresco = 100g liofilizado</p>
+
+                <div class="benefit-card" data-aos="fade-up" data-delay="200">
+                    <div class="benefit-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+                        </svg>
+                    </div>
+                    <h3 class="benefit-title">Energia Natural</h3>
+                    <p class="benefit-description">Fornece energia duradoura sem picos de açúcar no sangue</p>
                 </div>
-                
-                <div class="benefit-card fade-in">
-                    <div class="benefit-number">100%</div>
-                    <h3>Nutrientes Preservados</h3>
-                    <p>Zero perda de vitaminas e antioxidantes</p>
-                </div>
-                
-                <div class="benefit-card fade-in">
-                    <div class="benefit-number">0</div>
-                    <h3>Aditivos Químicos</h3>
-                    <p>Apenas açaí puro, nada mais</p>
+
+                <div class="benefit-card" data-aos="fade-up" data-delay="400">
+                    <div class="benefit-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M7 20l4-16m2 16l4-16M6 9h14M4 15h14"/>
+                        </svg>
+                    </div>
+                    <h3 class="benefit-title">100% Natural</h3>
+                    <p class="benefit-description">Sem conservantes, corantes ou aditivos artificiais</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- How to Use Section -->
-    <section class="section" id="como-usar">
+    <!-- Recipes Section -->
+    <section class="recipes" id="receitas">
         <div class="container">
-            <h2 class="section-title">Como Consumir</h2>
-            <p class="section-subtitle">Versatilidade total! Descubra as diferentes formas de aproveitar seu OverBerry no dia a dia.</p>
-            
-            <div class="usage-grid">
-                <div class="usage-card fade-in">
-                    <div class="usage-icon">
-                        <i class="fas fa-blender"></i>
+            <div class="section-header">
+                <h2 class="section-title gradient-text">Receitas Deliciosas</h2>
+                <p class="section-subtitle">Descubra maneiras incríveis de usar o açaí Overberry no seu dia a dia</p>
+            </div>
+
+            <div class="recipes-grid">
+                <div class="recipe-card" data-aos="fade-up" data-delay="0">
+                    <div class="recipe-image">
+                        <img src="/placeholder.svg?height=200&width=300&text=Smoothie+Bowl" alt="Smoothie Bowl Tropical">
+                        <div class="recipe-difficulty">Fácil</div>
                     </div>
-                    <h3>Smoothies & Vitaminas</h3>
-                    <p>Misture 1-2 colheres de sopa com frutas, leite ou água. Bata no liquidificador e pronto!</p>
-                    <div class="recipe">
-                        <strong>Receita básica:</strong><br>
-                        • 2 colheres de OverBerry<br>
-                        • 1 banana<br>
-                        • 200ml de leite vegetal<br>
-                        • Gelo a gosto
+                    <div class="recipe-content">
+                        <div class="recipe-meta">
+                            <span class="recipe-time">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <polyline points="12,6 12,12 16,14"/>
+                                </svg>
+                                5 min
+                            </span>
+                            <span class="recipe-servings">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                                    <circle cx="12" cy="7" r="4"/>
+                                </svg>
+                                1-2 pessoas
+                            </span>
+                        </div>
+                        <h3 class="recipe-title">Smoothie Bowl Tropical</h3>
+                        <p class="recipe-description">Um bowl refrescante e nutritivo para começar o dia com energia!</p>
+                        <div class="recipe-ingredients">
+                            <h4>Ingredientes:</h4>
+                            <ul>
+                                <li>2 colheres de açaí Overberry</li>
+                                <li>1 banana</li>
+                                <li>Manga</li>
+                                <li>Coco ralado</li>
+                                <li>Granola</li>
+                            </ul>
+                        </div>
+                        <button class="btn btn-primary recipe-btn">Ver Receita Completa</button>
                     </div>
                 </div>
-                
-                <div class="usage-card fade-in">
-                    <div class="usage-icon">
-                        <i class="fas fa-ice-cream"></i>
+
+                <div class="recipe-card" data-aos="fade-up" data-delay="200">
+                    <div class="recipe-image">
+                        <img src="/placeholder.svg?height=200&width=300&text=Vitamina+Energética" alt="Vitamina Energética">
+                        <div class="recipe-difficulty">Fácil</div>
                     </div>
-                    <h3>Tigela de Açaí</h3>
-                    <p>Misture com um pouco de água gelada até formar uma pasta cremosa. Adicione suas coberturas favoritas.</p>
-                    <div class="recipe">
-                        <strong>Dica especial:</strong><br>
-                        • 3 colheres de OverBerry<br>
-                        • 50ml de água gelada<br>
-                        • Misture até formar cremosidade<br>
-                        • Adicione granola e frutas
+                    <div class="recipe-content">
+                        <div class="recipe-meta">
+                            <span class="recipe-time">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <polyline points="12,6 12,12 16,14"/>
+                                </svg>
+                                3 min
+                            </span>
+                            <span class="recipe-servings">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                                    <circle cx="12" cy="7" r="4"/>
+                                </svg>
+                                1-2 pessoas
+                            </span>
+                        </div>
+                        <h3 class="recipe-title">Vitamina Energética</h3>
+                        <p class="recipe-description">Perfeita para o pré-treino ou quando precisar de energia extra!</p>
+                        <div class="recipe-ingredients">
+                            <h4>Ingredientes:</h4>
+                            <ul>
+                                <li>1 colher de açaí Overberry</li>
+                                <li>Leite de coco</li>
+                                <li>Banana</li>
+                                <li>Mel</li>
+                                <li>Gelo</li>
+                            </ul>
+                        </div>
+                        <button class="btn btn-primary recipe-btn">Ver Receita Completa</button>
                     </div>
                 </div>
-                
-                <div class="usage-card fade-in">
-                    <div class="usage-icon">
-                        <i class="fas fa-cookie-bite"></i>
+
+                <div class="recipe-card" data-aos="fade-up" data-delay="400">
+                    <div class="recipe-image">
+                        <img src="/placeholder.svg?height=200&width=300&text=Sorvete+de+Açaí" alt="Sorvete de Açaí">
+                        <div class="recipe-difficulty">Médio</div>
                     </div>
-                    <h3>Receitas Fitness</h3>
-                    <p>Incremente bolos, panquecas, iogurtes e outras receitas com o sabor e nutrientes do açaí.</p>
-                    <div class="recipe">
-                        <strong>Versatilidade:</strong><br>
-                        • Adicione a iogurtes<br>
-                        • Misture em massas de bolo<br>
-                        • Polvilhe sobre sobremesas<br>
-                        • Crie gelados caseiros
+                    <div class="recipe-content">
+                        <div class="recipe-meta">
+                            <span class="recipe-time">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <polyline points="12,6 12,12 16,14"/>
+                                </svg>
+                                15 min
+                            </span>
+                            <span class="recipe-servings">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                                    <circle cx="12" cy="7" r="4"/>
+                                </svg>
+                                1-2 pessoas
+                            </span>
+                        </div>
+                        <h3 class="recipe-title">Sorvete de Açaí</h3>
+                        <p class="recipe-description">Uma sobremesa saudável e deliciosa para toda a família!</p>
+                        <div class="recipe-ingredients">
+                            <h4>Ingredientes:</h4>
+                            <ul>
+                                <li>3 colheres de açaí Overberry</li>
+                                <li>Leite condensado</li>
+                                <li>Creme de leite</li>
+                                <li>Frutas vermelhas</li>
+                            </ul>
+                        </div>
+                        <button class="btn btn-primary recipe-btn">Ver Receita Completa</button>
                     </div>
                 </div>
             </div>
-            
-            <div class="dosage-info fade-in">
-                <h3>Dosagem Recomendada</h3>
-                <p>1 a 3 colheres de sopa por dia (15g a 45g). Uma embalagem de 100g rende aproximadamente 6 a 7 porções generosas.</p>
+
+            <div class="recipes-cta">
+                <button class="btn btn-secondary">
+                    Ver Todas as Receitas
+                    <svg class="btn-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                </button>
             </div>
         </div>
     </section>
 
-    <!-- Trust Section -->
-    <section class="section trust-section">
+    <!-- About Section -->
+    <section class="about" id="sobre">
         <div class="container">
-            <h2 class="section-title">Confiança e Qualidade</h2>
-            
-            <div class="trust-grid">
-                <div class="trust-item fade-in">
-                    <i class="fas fa-certificate"></i>
-                    <h3>Certificação Orgânica</h3>
-                    <p>Nosso açaí é 100% orgânico e certificado, garantindo a origem sustentável e livre de agrotóxicos.</p>
+            <div class="about-content">
+                <div class="about-text" data-aos="fade-right">
+                    <h2 class="section-title gradient-text">Nossa História</h2>
+                    <p class="about-description">
+                        A Overberry nasceu da paixão por levar o melhor do açaí amazônico para sua mesa. 
+                        Utilizamos tecnologia de liofilização que preserva 100% dos nutrientes e sabor original.
+                    </p>
+                    <p class="about-description">
+                        Nosso compromisso é com a qualidade, sustentabilidade e o bem-estar de nossos clientes. 
+                        Cada embalagem carrega o cuidado e a tradição da Amazônia.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <div class="stat-number">100%</div>
+                            <div class="stat-label">Natural</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">5+</div>
+                            <div class="stat-label">Anos de experiência</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">1000+</div>
+                            <div class="stat-label">Clientes satisfeitos</div>
+                        </div>
+                    </div>
                 </div>
-                
-                <div class="trust-item fade-in">
-                    <i class="fas fa-microscope"></i>
-                    <h3>Laboratório Próprio</h3>
-                    <p>Cada lote passa por rigorosos testes de qualidade em nosso laboratório antes de chegar até você.</p>
-                </div>
-                
-                <div class="trust-item fade-in">
-                    <i class="fas fa-leaf"></i>
-                    <h3>Sustentabilidade</h3>
-                    <p>Apoiamos comunidades ribeirinhas da Amazônia, garantindo fair trade e preservação ambiental.</p>
-                </div>
-                
-                <div class="trust-item fade-in">
-                    <i class="fas fa-award"></i>
-                    <h3>Prêmios e Reconhecimentos</h3>
-                    <p>Reconhecida como uma das melhores marcas de superfoods do Brasil em 2024.</p>
+
+                <div class="about-image" data-aos="fade-left">
+                    <img src="/placeholder.svg?height=400&width=500&text=Plantação+de+Açaí" alt="Plantação de Açaí">
+                    <div class="rating-card">
+                        <div class="stars">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/>
+                            </svg>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/>
+                            </svg>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/>
+                            </svg>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/>
+                            </svg>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/>
+                            </svg>
+                            <span class="rating-number">4.9/5</span>
+                        </div>
+                        <p class="rating-text">Avaliação dos clientes</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Where to Buy Section -->
-    <section class="section cta-section" id="onde-comprar">
+    <!-- CTA Section -->
+    <section class="cta-section">
         <div class="container">
-            <h2 class="section-title">Onde Comprar</h2>
-            <p class="section-subtitle">Adquira seu OverBerry através dos nossos canais oficiais e receba em casa com segurança e rapidez.</p>
-            
-            <div class="purchase-options">
-                <div class="purchase-card fade-in">
-                    <i class="fab fa-whatsapp"></i>
-                    <h3>WhatsApp</h3>
-                    <p>Atendimento personalizado e entrega rápida</p>
-                    <a href="https://wa.me/5519999999999" class="purchase-btn" target="_blank">
-                        <i class="fab fa-whatsapp"></i> Comprar no WhatsApp
-                    </a>
-                </div>
-                
-                <div class="purchase-card fade-in">
-                    <i class="fas fa-store"></i>
-                    <h3>Loja Online</h3>
-                    <p>Site oficial com frete grátis para todo o Brasil</p>
-                    <a href="#" class="purchase-btn">
-                        <i class="fas fa-shopping-cart"></i> Acessar Loja
-                    </a>
-                </div>
-                
-                <div class="purchase-card fade-in">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <h3>Pontos de Venda</h3>
-                    <p>Encontre OverBerry em lojas selecionadas</p>
-                    <a href="#contato" class="purchase-btn">
-                        <i class="fas fa-search"></i> Encontrar Loja
-                    </a>
-                </div>
-            </div>
-            
-            <div class="shipping-info">
-                <div class="shipping-item">
-                    <i class="fas fa-truck"></i>
-                    <span>Frete Grátis acima de R$ 150</span>
-                </div>
-                <div class="shipping-item">
-                    <i class="fas fa-undo-alt"></i>
-                    <span>7 dias para troca</span>
-                </div>
-                <div class="shipping-item">
-                    <i class="fas fa-shield-alt"></i>
-                    <span>Compra 100% segura</span>
-                </div>
-                <div class="shipping-item">
-                    <i class="fas fa-headset"></i>
-                    <span>Suporte especializado</span>
+            <div class="cta-content" data-aos="fade-up">
+                <h2 class="cta-title">Pronto para experimentar?</h2>
+                <p class="cta-subtitle">Transforme suas receitas com o açaí mais puro e nutritivo do mercado</p>
+                <div class="cta-buttons">
+                    <button class="btn btn-white">
+                        Comprar Agora
+                        <svg class="btn-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </button>
+                    <button class="btn btn-outline-white">Falar com Especialista</button>
                 </div>
             </div>
         </div>
@@ -364,78 +340,48 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <div class="footer-logo">OverBerry</div>
-                    <p>O açaí mais puro e concentrado do Brasil. Levamos a Amazônia até você com qualidade premium e sustentabilidade.</p>
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-youtube"></i></a>
-                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <div class="footer-logo">
+                        <h3>Overberry</h3>
                     </div>
+                    <p class="footer-description">
+                        Levando o melhor do açaí amazônico para sua mesa com qualidade e sustentabilidade.
+                    </p>
                 </div>
-                
+
                 <div class="footer-section">
-                    <h3>Contato</h3>
-                    <div class="contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <span>contato@overberry.com.br</span>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fab fa-whatsapp"></i>
-                        <span>(19) 99999-9999</span>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <span>Indaiatuba, São Paulo - BR</span>
-                    </div>
-                </div>
-                
-                <div class="footer-section">
-                    <h3>Links Úteis</h3>
+                    <h4 class="footer-title">Produtos</h4>
                     <ul class="footer-links">
-                        <li><a href="#produto">Nosso Produto</a></li>
-                        <li><a href="#beneficios">Benefícios</a></li>
-                        <li><a href="#como-usar">Como Usar</a></li>
-                        <li><a href="#">Política de Privacidade</a></li>
-                        <li><a href="#">Termos de Uso</a></li>
+                        <li><a href="#">Açaí Liofilizado</a></li>
+                        <li><a href="#">Kits Receitas</a></li>
+                        <li><a href="#">Assinatura Mensal</a></li>
                     </ul>
                 </div>
-                
+
                 <div class="footer-section">
-                    <h3>Newsletter</h3>
-                    <p>Receba dicas, receitas e novidades sobre superfoods</p>
-                    <div class="newsletter-form">
-                        <input type="email" placeholder="Seu melhor e-mail" class="newsletter-input">
-                        <button class="newsletter-btn">
-                            <i class="fas fa-paper-plane"></i>
-                        </button>
-                    </div>
+                    <h4 class="footer-title">Suporte</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Central de Ajuda</a></li>
+                        <li><a href="#">Contato</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4 class="footer-title">Conecte-se</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">YouTube</a></li>
+                    </ul>
                 </div>
             </div>
-            
+
             <div class="footer-bottom">
-                <div class="footer-legal">
-                    <p>&copy; 2025 OverBerry. Todos os direitos reservados.</p>
-                    <p>CNPJ: 12.345.678/0001-90 | Indústria Brasileira</p>
-                </div>
+                <p>&copy; 2024 Overberry. Todos os direitos reservados.</p>
             </div>
         </div>
     </footer>
 
-    <!-- WhatsApp Float Button -->
-    <div class="whatsapp-float" id="whatsapp-float">
-        <a href="https://wa.me/5519999999999?text=Olá!%20Tenho%20interesse%20no%20Açaí%20Liofilizado%20OverBerry." target="_blank" class="whatsapp-btn">
-            <i class="fab fa-whatsapp"></i>
-            <span class="whatsapp-text">Fale conosco</span>
-        </a>
-    </div>
-
-    <!-- Back to Top Button -->
-    <button class="back-to-top" id="back-to-top">
-        <i class="fas fa-chevron-up"></i>
-    </button>
-
-    <!-- Link to external JavaScript -->
     <script src="script.js"></script>
 </body>
 </html>
