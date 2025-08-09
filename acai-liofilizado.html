@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OverBerry Original - Açaí Liofilizado Premium | OverBerry</title>
+    <meta name="description" content="OverBerry Original - Açaí amazônico liofilizado em pó, 100% natural. Rico em antioxidantes, energia pura da floresta amazônica.">
+    <link rel="stylesheet" href="acai-liofilizado/styles.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <!-- Logo -->
+            <div class="logo">
+                <a href="index.html">OverBerry</a>
+            </div>
+
+            <!-- Navigation Menu -->
+            <div class="nav-menu" id="navMenu">
+                <a href="index.html#inicio" class="nav-link">Início</a>
+                <a href="index.html#beneficios" class="nav-link">Benefícios</a>
+                <a href="acai-liofilizado.html" class="nav-link active">Produto</a>
+                <a href="index.html#receitas" class="nav-link">Receitas</a>
+                <a href="index.html#sobre" class="nav-link">Sobre</a>
+                <a href="index.html#contato" class="nav-link">Contato</a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <!-- CTA Button -->
+            <button class="cta-button" onclick="scrollToSection('buy-section')">Comprar agora</button>
+        </nav>
+    </header>
+
+    <!-- Breadcrumb -->
+    <section class="breadcrumb">
+        <div class="breadcrumb-container">
+            <nav class="breadcrumb-nav">
+                <a href="index.html" class="breadcrumb-link">Início</a>
+                <span class="breadcrumb-separator">›</span>
+                <span class="breadcrumb-current">OverBerry Original</span>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Hero Product Section -->
+    <main class="product-hero">
+        <div class="product-hero-container">
+            <div class="product-hero-content">
+                <!-- Product Image -->
+                <div class="product-hero-image">
+                    <div class="image-container">
+                        <img src="assets/images/package.png" alt="OverBerry Original - Açaí em Pó Liofilizado" class="hero-product-img">
+                        <div class="badge-premium">Premium</div>
+                        <div class="badge-natural">100% Natural</div>
+                    </div>
+                </div>
+
+                <!-- Product Info -->
+                <div class="product-hero-info">
+                    <div class="product-category">Açaí Premium</div>
+                    <h1 class="product-title">OverBerry <span class="highlight-green">Original</span></h1>
+                    <p class="product-subtitle">Açaí Amazônico Liofilizado em Pó</p>
+                    
+                    <div class="product-highlights">
+                        <div class="highlight-item">
+                            <span class="highlight-icon">🌿</span>
+                            <span>100% Natural</span>
+                        </div>
+                        <div class="highlight-item">
+                            <span class="highlight-icon">🧬</span>
+                            <span>Rico em Antioxidantes</span>
+                        </div>
+                        <div class="highlight-item">
+                            <span class="highlight-icon">⚡</span>
+                            <span>Energia Sustentada</span>
+                        </div>
+                        <div class="highlight-item">
+                            <span class="highlight-icon">🚫</span>
+                            <span>Zero Conservantes</span>
+                        </div>
+                    </div>
+
+                    <div class="product-description">
+                        <p>O poder nutritivo do açaí amazônico preservado através da liofilização. Cada porção contém todos os nutrientes da fruta fresca, concentrados em um pó puro e versátil.</p>
+                    </div>
+
+                    <div class="product-actions" id="buy-section">
+                        <button class="btn-buy-ml" onclick="window.open('#', '_blank')">
+                            <svg class="btn-icon" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0C8.25 0 5.25 3 5.25 6.75c0 1.95.75 3.75 1.95 5.1L12 24l4.8-12.15c1.2-1.35 1.95-3.15 1.95-5.1C18.75 3 15.75 0 12 0zm0 9c-1.24 0-2.25-1.01-2.25-2.25S10.76 4.5 12 4.5s2.25 1.01 2.25 2.25S13.24 9 12 9z"/>
+                                <circle cx="12" cy="6.75" r="1"/>
+                            </svg>
+                            Comprar no Mercado Livre
+                        </button>
+                        <button class="btn-buy-whatsapp" onclick="window.open('https://wa.me/5511999999999?text=Olá! Gostaria de comprar o OverBerry Original', '_blank')">
+                            <svg class="btn-icon" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.864 3.488"/>
+                            </svg>
+                            Comprar por WhatsApp
+                        </button>
+                    </div>
+
+                    <div class="shipping-info">
+                        <p>🚚 Frete grátis para todo o Brasil em compras acima de R$ 150</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Product Details Section -->
+    <section class="product-details">
+        <div class="details-container">
+            <div class="details-grid">
+                <!-- Specifications -->
+                <div class="details-card">
+                    <h3 class="details-title">Especificações</h3>
+                    <div class="specs-list">
+                        <div class="spec-item">
+                            <span class="spec-label">Peso líquido:</span>
+                            <span class="spec-value">100g</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Rendimento:</span>
+                            <span class="spec-value">Até 20 porções</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Origem:</span>
+                            <span class="spec-value">Amazônia Brasileira</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Processo:</span>
+                            <span class="spec-value">Liofilização Freeze Dried</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Validade:</span>
+                            <span class="spec-value">24 meses</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Armazenamento:</span>
+                            <span class="spec-value">Local seco e arejado</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Nutritional Info -->
+                <div class="details-card">
+                    <h3 class="details-title">Informações Nutricionais</h3>
+                    <div class="nutrition-table">
+                        <div class="nutrition-header">
+                            <span>Porção de 5g (1 scoop)</span>
+                        </div>
+                        <div class="nutrition-row">
+                            <span class="nutrition-label">Valor energético</span>
+                            <span class="nutrition-value">25 kcal</span>
+                        </div>
+                        <div class="nutrition-row">
+                            <span class="nutrition-label">Carboidratos</span>
+                            <span class="nutrition-value">0,6g</span>
+                        </div>
+                        <div class="nutrition-row">
+                            <span class="nutrition-label">Açúcares totais</span>
+                            <span class="nutrition-value">0g</span>
+                        </div>
+                        <div class="nutrition-row">
+                            <span class="nutrition-label">Açúcares adicionados</span>
+                            <span class="nutrition-value">0g</span>
+                        </div>
+                        <div class="nutrition-row">
+                            <span class="nutrition-label">Proteínas</span>
+                            <span class="nutrition-value">0,4g</span>
+                        </div>
+                        <div class="nutrition-row">
+                            <span class="nutrition-label">Gorduras totais</span>
+                            <span class="nutrition-value">2,3g</span>
+                        </div>
+                        <div class="nutrition-row">
+                            <span class="nutrition-label">Gorduras saturadas</span>
+                            <span class="nutrition-value">0g</span>
+                        </div>
+                        <div class="nutrition-row">
+                            <span class="nutrition-label">Gorduras trans</span>
+                            <span class="nutrition-value">0g</span>
+                        </div>
+                        <div class="nutrition-row">
+                            <span class="nutrition-label">Fibras alimentares</span>
+                            <span class="nutrition-value">1,5g</span>
+                        </div>
+                        <div class="nutrition-row">
+                            <span class="nutrition-label">Sódio</span>
+                            <span class="nutrition-value">0mg</span>
+                        </div>
+                        <div class="nutrition-row highlight">
+                            <span class="nutrition-label">Antocianinas</span>
+                            <span class="nutrition-value">Alto teor</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How to Use Section -->
+    <section class="how-to-use">
+        <div class="how-to-use-container">
+            <div class="section-header">
+                <h2 class="section-title">Como <span class="highlight-green">Usar</span></h2>
+                <p class="section-subtitle">Simples, versátil e delicioso. Transforme seu OverBerry em momentos especiais.</p>
+            </div>
+
+            <div class="usage-grid">
+                <!-- Basic Usage -->
+                <div class="usage-card">
+                    <div class="usage-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none">
+                            <path d="M12 2C12 2 8 6 8 10C8 14 10 16 12 16C14 16 16 14 16 10C16 6 12 2 12 2Z" stroke="currentColor" stroke-width="2" fill="none"/>
+                            <path d="M8 20H16M10 20V22M14 20V22" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3 class="usage-title">Dose Recomendada</h3>
+                    <p class="usage-description">1 scoop (5g) por porção. Comece com menos e ajuste ao seu gosto.</p>
+                </div>
+
+                <!-- Smoothie -->
+                <div class="usage-card">
+                    <div class="usage-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none">
+                            <path d="M5 12V7C5 5.89543 5.89543 5 7 5H17C18.1046 5 19 5.89543 19 7V12" stroke="currentColor" stroke-width="2"/>
+                            <path d="M5 12C5 16.4183 8.58172 20 13 20H11C6.58172 20 3 16.4183 3 12V11H5V12Z" fill="currentColor"/>
+                            <path d="M19 12C19 16.4183 15.4183 20 11 20H13C17.4183 20 21 16.4183 21 12V11H19V12Z" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <h3 class="usage-title">Smoothies & Vitaminas</h3>
+                    <p class="usage-description">Misture com frutas, leite vegetal ou água. Perfeito para pré-treino.</p>
+                </div>
+
+                <!-- Bowl -->
+                <div class="usage-card">
+                    <div class="usage-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none">
+                            <path d="M12 2C15.3137 2 18 4.68629 18 8C18 11.3137 15.3137 14 12 14C8.68629 14 6 11.3137 6 8C6 4.68629 8.68629 2 12 2Z" stroke="currentColor" stroke-width="2" fill="none"/>
+                            <path d="M6 14C6 17.3137 8.68629 20 12 20C15.3137 20 18 17.3137 18 14" stroke="currentColor" stroke-width="2" fill="none"/>
+                        </svg>
+                    </div>
+                    <h3 class="usage-title">Açaí Bowls</h3>
+                    <p class="usage-description">Crie bowls incríveis com granola, frutas e mel. Ideal para café da manhã.</p>
+                </div>
+
+                <!-- Recipes -->
+                <div class="usage-card">
+                    <div class="usage-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none">
+                            <path d="M12 2L2 7V17C2 18.1046 2.89543 19 4 19H20C21.1046 19 22 18.1046 22 17V7L12 2Z" stroke="currentColor" stroke-width="2" fill="none"/>
+                            <path d="M12 7V12M8 9V12M16 9V12" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3 class="usage-title">Receitas Criativas</h3>
+                    <p class="usage-description">Adicione em iogurtes, sobremesas, bolos e muito mais.</p>
+                </div>
+            </div>
+
+            <div class="preparation-steps">
+                <h3 class="steps-title">Preparo Básico</h3>
+                <div class="steps-list">
+                    <div class="step-item">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h4>Misture</h4>
+                            <p>Adicione 1 scoop (5g) em 200ml de líquido</p>
+                        </div>
+                    </div>
+                    <div class="step-item">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h4>Mexa bem</h4>
+                            <p>Bata no liquidificador ou misture vigorosamente</p>
+                        </div>
+                    </div>
+                    <div class="step-item">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h4>Aproveite</h4>
+                            <p>Consuma imediatamente para melhor sabor</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ingredients Section -->
+    <section class="ingredients">
+        <div class="ingredients-container">
+            <div class="ingredients-content">
+                <div class="ingredients-info">
+                    <h2 class="ingredients-title">Ingredientes <span class="highlight-green">Puros</span></h2>
+                    <p class="ingredients-subtitle">Transparência total. Você sabe exatamente o que está consumindo.</p>
+                    
+                    <div class="ingredients-list">
+                        <div class="ingredient-item main-ingredient">
+                            <div class="ingredient-icon">🫐</div>
+                            <div class="ingredient-details">
+                                <h3 class="ingredient-name">Açaí (Euterpe oleracea)</h3>
+                                <p class="ingredient-description">100% polpa de açaí amazônico liofilizada. Sem adição de açúcar, conservantes ou corantes artificiais.</p>
+                                <div class="ingredient-origin">
+                                    <span class="origin-label">Origem:</span>
+                                    <span class="origin-value">Várzeas do Pará, Brasil</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="purity-badges">
+                        <div class="purity-badge">
+                            <span class="badge-icon">✅</span>
+                            <span>Sem açúcar adicionado</span>
+                        </div>
+                        <div class="purity-badge">
+                            <span class="badge-icon">✅</span>
+                            <span>Sem conservantes</span>
+                        </div>
+                        <div class="purity-badge">
+                            <span class="badge-icon">✅</span>
+                            <span>Sem corantes artificiais</span>
+                        </div>
+                        <div class="purity-badge">
+                            <span class="badge-icon">✅</span>
+                            <span>Sem glúten</span>
+                        </div>
+                        <div class="purity-badge">
+                            <span class="badge-icon">✅</span>
+                            <span>Vegano</span>
+                        </div>
+                        <div class="purity-badge">
+                            <span class="badge-icon">✅</span>
+                            <span>Sustentável</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="process-info">
+                    <h3 class="process-title">Processo de Liofilização</h3>
+                    <p class="process-description">
+                        A liofilização é um processo que remove a água dos alimentos através do congelamento e sublimação, preservando 98% dos nutrientes originais. 
+                        Diferente da secagem comum, este método mantém a estrutura celular intacta, conservando sabor, cor e propriedades nutritivas.
+                    </p>
+                    
+                    <div class="process-benefits">
+                        <div class="benefit-item">
+                            <div class="benefit-icon">🔬</div>
+                            <span>Preserva 98% dos nutrientes</span>
+                        </div>
+                        <div class="benefit-item">
+                            <div class="benefit-icon">🌡️</div>
+                            <span>Baixas temperaturas</span>
+                        </div>
+                        <div class="benefit-item">
+                            <div class="benefit-icon">⏰</div>
+                            <span>Validade estendida</span>
+                        </div>
+                        <div class="benefit-item">
+                            <div class="benefit-icon">💧</div>
+                            <span>Fácil reidratação</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <!-- Coluna 1: OverBerry -->
+                <div class="footer-column">
+                    <h3 class="footer-title">OverBerry</h3>
+                    <p class="footer-description">
+                        O poder do açaí amazônico preservado para sua saúde e bem-estar.
+                    </p>
+                    <div class="footer-social">
+                        <button class="social-btn" onclick="window.open('#', '_blank')">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4H7.6m9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8 1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3z"/>
+                            </svg>
+                            Instagram
+                        </button>
+                        <button class="social-btn" onclick="window.open('https://wa.me/5511999999999', '_blank')">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.864 3.488"/>
+                            </svg>
+                            WhatsApp
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Coluna 2: Produtos -->
+                <div class="footer-column">
+                    <h4 class="footer-subtitle">Produtos</h4>
+                    <ul class="footer-links">
+                        <li><a href="acai-liofilizado.html" class="footer-link">OverBerry Original</a></li>
+                        <li><a href="index.html#receitas" class="footer-link">Receitas Exclusivas</a></li>
+                        <li><a href="#" class="footer-link">Kit Família</a></li>
+                        <li><a href="#" class="footer-link">Assinatura Mensal</a></li>
+                    </ul>
+                </div>
+
+                <!-- Coluna 3: Links Úteis -->
+                <div class="footer-column">
+                    <h4 class="footer-subtitle">Links Úteis</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html#beneficios" class="footer-link">Benefícios</a></li>
+                        <li><a href="index.html#sobre" class="footer-link">Nossa História</a></li>
+                        <li><a href="#" class="footer-link">Blog</a></li>
+                        <li><a href="#" class="footer-link">FAQ</a></li>
+                    </ul>
+                </div>
+
+                <!-- Coluna 4: Contato -->
+                <div class="footer-column">
+                    <h4 class="footer-subtitle">Contato</h4>
+                    <div class="footer-contact">
+                        <div class="contact-item">
+                            <span class="contact-icon">📧</span>
+                            <span class="contact-text">contato@overberry.com.br</span>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">📱</span>
+                            <span class="contact-text">(11) 99999-9999</span>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">📍</span>
+                            <span class="contact-text">São Paulo, SP</span>
+                        </div>
+                    </div>
+
+                    <!-- Newsletter -->
+                    <div class="newsletter">
+                        <h5 class="newsletter-title">Newsletter</h5>
+                        <div class="newsletter-form">
+                            <input type="email" placeholder="Seu e-mail" class="newsletter-input">
+                            <button class="newsletter-btn">OK</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p class="footer-copyright">© 2024 OverBerry. Todos os direitos reservados.</p>
+                    <div class="footer-bottom-right">
+                        <span class="footer-cnpj">CNPJ: 00.000.000/0001-00</span>
+                        <span class="footer-made">Feito com 💜 no Brasil</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Voltar ao topo">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="m18 15-6-6-6 6"/>
+        </svg>
+    </button>
+
+    <script src="acai-liofilizado/script.js"></script>
+</body>
+
+</html>

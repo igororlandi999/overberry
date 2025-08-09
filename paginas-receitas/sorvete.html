@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorvete Caseiro de Açaí - OverBerry</title>
+    <link rel="stylesheet" href="../receita-individual/styles.css">
+    <link rel="stylesheet" href="../components/components.css">
+    <meta name="description"
+        content="Receita de Sorvete Caseiro de Açaí com OverBerry. Sobremesa refrescante, cremosa e rica em antioxidantes, perfeita para os dias quentes.">
+</head>
+
+<body>
+    <!-- Header -->
+    <div id="navbar-container"></div>
+
+    <!-- Recipe Hero -->
+    <section class="recipe-hero">
+        <div class="hero-content">
+            <div class="breadcrumb">
+                <a href="receitas.html">Receitas</a>
+                <span>•</span>
+                <a href="receitas.html?filter=sobremesa">Sobremesas</a>
+                <span>•</span>
+                <span>Sorvete Caseiro de Açaí</span>
+            </div>
+
+            <h1 class="recipe-title">Sorvete Caseiro de Açaí</h1>
+            <p class="recipe-subtitle">
+                O verão nunca foi tão saboroso! Sorvete cremoso e refrescante feito em casa com OverBerry,
+                sem conservantes artificiais. Uma explosão de sabor e antioxidantes para se refrescar com saúde e
+                prazer.
+            </p>
+
+            <div class="recipe-meta">
+                <div class="meta-item">
+                    <span class="meta-icon">⏱️</span>
+                    <div class="meta-info">
+                        <span class="meta-label">Tempo</span>
+                        <span class="meta-value">20 min + 6h freezer</span>
+                    </div>
+                </div>
+                <div class="meta-item">
+                    <span class="meta-icon">👨‍🍳</span>
+                    <div class="meta-info">
+                        <span class="meta-label">Dificuldade</span>
+                        <span class="meta-value">Médio</span>
+                    </div>
+                </div>
+                <div class="meta-item">
+                    <span class="meta-icon">🍽️</span>
+                    <div class="meta-info">
+                        <span class="meta-label">Porções</span>
+                        <span class="meta-value">8 pessoas</span>
+                    </div>
+                </div>
+                <div class="meta-item">
+                    <span class="meta-icon">🔥</span>
+                    <div class="meta-info">
+                        <span class="meta-label">Calorias</span>
+                        <span class="meta-value">~250 kcal/porção</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recipe Content -->
+    <section class="recipe-content">
+        <div class="content-container">
+            <div class="content-grid">
+
+                <!-- Main Content -->
+                <div class="main-content">
+
+                    <!-- Recipe Image -->
+                    <div class="recipe-image-section">
+                        <div class="image-container">
+                            <img src="../assets/images/sorvete.jpg" alt="Sorvete Caseiro de Açaí OverBerry"
+                                class="recipe-main-img">
+                            <div class="image-overlay">
+                                <button class="image-expand-btn" aria-label="Expandir imagem">🔍</button>
+                            </div>
+                        </div>
+                        <div class="image-caption">
+                            Sorvete Caseiro de Açaí OverBerry - Refrescância natural em cada colherada!
+                        </div>
+                    </div>
+
+                    <!-- Ingredients -->
+                    <div class="recipe-section">
+                        <h2 class="section-title">
+                            <span class="title-icon">🛒</span>
+                            Ingredientes
+                        </h2>
+                        <div class="ingredients-container">
+                            <ul class="ingredients-list" id="ingredientsList">
+                                <li class="ingredient-item" data-ingredient="overberry">
+                                    <input type="checkbox" id="ingredient-1" class="ingredient-checkbox">
+                                    <label for="ingredient-1" class="ingredient-label">
+                                        <span class="ingredient-amount">3 scoops</span>
+                                        <span class="ingredient-name">OverBerry (açaí liofilizado)</span>
+                                    </label>
+                                </li>
+                                <li class="ingredient-item">
+                                    <input type="checkbox" id="ingredient-2" class="ingredient-checkbox">
+                                    <label for="ingredient-2" class="ingredient-label">
+                                        <span class="ingredient-amount">1 lata (395g)</span>
+                                        <span class="ingredient-name">Leite condensado</span>
+                                    </label>
+                                </li>
+                                <li class="ingredient-item">
+                                    <input type="checkbox" id="ingredient-3" class="ingredient-checkbox">
+                                    <label for="ingredient-3" class="ingredient-label">
+                                        <span class="ingredient-amount">200ml</span>
+                                        <span class="ingredient-name">Creme de leite fresco</span>
+                                    </label>
+                                </li>
+                                <li class="ingredient-item">
+                                    <input type="checkbox" id="ingredient-4" class="ingredient-checkbox">
+                                    <label for="ingredient-4" class="ingredient-label">
+                                        <span class="ingredient-amount">2 unidades</span>
+                                        <span class="ingredient-name">Bananas maduras</span>
+                                    </label>
+                                </li>
+                                <li class="ingredient-item">
+                                    <input type="checkbox" id="ingredient-5" class="ingredient-checkbox">
+                                    <label for="ingredient-5" class="ingredient-label">
+                                        <span class="ingredient-amount">2 colheres sopa</span>
+                                        <span class="ingredient-name">Suco de limão fresco</span>
+                                    </label>
+                                </li>
+                                <li class="ingredient-item">
+                                    <input type="checkbox" id="ingredient-6" class="ingredient-checkbox">
+                                    <label for="ingredient-6" class="ingredient-label">
+                                        <span class="ingredient-amount">1 colher chá</span>
+                                        <span class="ingredient-name">Essência de baunilha</span>
+                                    </label>
+                                </li>
+                                <li class="ingredient-item optional">
+                                    <input type="checkbox" id="ingredient-7" class="ingredient-checkbox">
+                                    <label for="ingredient-7" class="ingredient-label">
+                                        <span class="ingredient-amount">1 pitada</span>
+                                        <span class="ingredient-name">Sal marinho (opcional)</span>
+                                    </label>
+                                </li>
+                                <li class="ingredient-item optional">
+                                    <input type="checkbox" id="ingredient-8" class="ingredient-checkbox">
+                                    <label for="ingredient-8" class="ingredient-label">
+                                        <span class="ingredient-amount">2 colheres sopa</span>
+                                        <span class="ingredient-name">Mel ou açúcar (opcional)</span>
+                                    </label>
+                                </li>
+                                <li class="ingredient-item optional">
+                                    <input type="checkbox" id="ingredient-9" class="ingredient-checkbox">
+                                    <label for="ingredient-9" class="ingredient-label">
+                                        <span class="ingredient-amount">1/2 xícara</span>
+                                        <span class="ingredient-name">Pedaços de frutas (opcional)</span>
+                                    </label>
+                                </li>
+                            </ul>
+
+                            <div class="ingredients-actions">
+                                <button class="btn-shopping-list" id="shoppingListBtn">
+                                    📝 Gerar lista de compras
+                                </button>
+                                <button class="btn-scale-recipe" id="scaleRecipeBtn">
+                                    ⚖️ Ajustar porções
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Instructions -->
+                    <div class="recipe-section">
+                        <h2 class="section-title">
+                            <span class="title-icon">👨‍🍳</span>
+                            Modo de Preparo
+                        </h2>
+                        <div class="instructions-container">
+                            <ol class="instructions-list" id="instructionsList">
+                                <li class="instruction-step">
+                                    <div class="step-number">1</div>
+                                    <div class="step-content">
+                                        <h3 class="step-title">Prepare o OverBerry</h3>
+                                        <p class="step-description">
+                                            Dissolva os 3 scoops de OverBerry em 4 colheres de água morna, mexendo bem
+                                            até formar uma pasta lisa e homogênea, sem grumos. Reserve em temperatura
+                                            ambiente.
+                                        </p>
+                                        <div class="step-timer">
+                                            <span class="timer-icon">⏱️</span>
+                                            <span class="timer-text">2 minutos</span>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="instruction-step">
+                                    <div class="step-number">2</div>
+                                    <div class="step-content">
+                                        <h3 class="step-title">Processe as bananas</h3>
+                                        <p class="step-description">
+                                            Descasque as bananas, corte em pedaços e bata no liquidificador com suco de
+                                            limão
+                                            até formar um purê liso. O limão evita oxidação e adiciona frescor.
+                                        </p>
+                                        <div class="step-tip">
+                                            <span class="tip-icon">🍋</span>
+                                            <span class="tip-text">Limão evita que a banana escureça e melhora o
+                                                sabor!</span>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="instruction-step">
+                                    <div class="step-number">3</div>
+                                    <div class="step-content">
+                                        <h3 class="step-title">Misture os ingredientes base</h3>
+                                        <p class="step-description">
+                                            No liquidificador, combine a pasta de açaí, purê de banana, leite
+                                            condensado,
+                                            essência de baunilha e uma pitada de sal. Bata até ficar completamente
+                                            homogêneo.
+                                        </p>
+                                        <div class="step-timer">
+                                            <span class="timer-icon">⏱️</span>
+                                            <span class="timer-text">3 minutos</span>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="instruction-step">
+                                    <div class="step-number">4</div>
+                                    <div class="step-content">
+                                        <h3 class="step-title">Bata o creme de leite</h3>
+                                        <p class="step-description">
+                                            Em uma tigela gelada, bata o creme de leite fresco até formar picos firmes
+                                            (consistência de chantilly). Não bata demais para não virar manteiga.
+                                        </p>
+                                        <div class="step-timer">
+                                            <span class="timer-icon">⏱️</span>
+                                            <span class="timer-text">4-5 minutos</span>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="instruction-step">
+                                    <div class="step-number">5</div>
+                                    <div class="step-content">
+                                        <h3 class="step-title">Incorpore delicadamente</h3>
+                                        <p class="step-description">
+                                            Com movimentos envolventes e delicados, incorpore o creme batido à mistura
+                                            de açaí.
+                                            Faça isso em duas etapas para manter a leveza e cremosidade.
+                                        </p>
+                                        <div class="step-tip">
+                                            <span class="tip-icon">🥄</span>
+                                            <span class="tip-text">Movimentos suaves preservam o ar incorporado!</span>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="instruction-step">
+                                    <div class="step-number">6</div>
+                                    <div class="step-content">
+                                        <h3 class="step-title">Adicione frutas (opcional)</h3>
+                                        <p class="step-description">
+                                            Se desejar, adicione pedaços pequenos de morango, manga ou outras frutas
+                                            na mistura. Incorpore delicadamente para não quebrar os pedaços.
+                                        </p>
+                                        <div class="step-timer">
+                                            <span class="timer-icon">⏱️</span>
+                                            <span class="timer-text">2 minutos</span>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="instruction-step">
+                                    <div class="step-number">7</div>
+                                    <div class="step-content">
+                                        <h3 class="step-title">Transfira para o recipiente</h3>
+                                        <p class="step-description">
+                                            Despeje a mistura em um recipiente próprio para freezer, de preferência com
+                                            tampa hermética.
+                                            Alise a superfície e cubra com filme plástico em contato direto.
+                                        </p>
+                                        <div class="step-tip">
+                                            <span class="tip-icon">❄️</span>
+                                            <span class="tip-text">Filme em contato evita cristais de gelo na
+                                                superfície!</span>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="instruction-step">
+                                    <div class="step-number">8</div>
+                                    <div class="step-content">
+                                        <h3 class="step-title">Congele com mexidas</h3>
+                                        <p class="step-description">
+                                            Leve ao freezer e mexa vigorosamente a cada 2 horas nas primeiras 6 horas,
+                                            quebrando cristais de gelo. Isso garante textura cremosa e uniforme.
+                                        </p>
+                                        <div class="step-timer">
+                                            <span class="timer-icon">❄️</span>
+                                            <span class="timer-text">6 horas total (mexer 3x)</span>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="instruction-step">
+                                    <div class="step-number">9</div>
+                                    <div class="step-content">
+                                        <h3 class="step-title">Finalize e sirva</h3>
+                                        <p class="step-description">
+                                            Após 6 horas, o sorvete estará pronto. Retire do freezer 5-10 minutos antes
+                                            de servir
+                                            para facilitar o manuseio. Sirva em bolas usando colher para sorvete.
+                                        </p>
+                                        <div class="step-tip">
+                                            <span class="tip-icon">🍨</span>
+                                            <span class="tip-text">Decore com frutas frescas ou granola crocante!</span>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+
+                    <!-- Tips -->
+                    <div class="recipe-section">
+                        <h2 class="section-title">
+                            <span class="title-icon">💡</span>
+                            Dicas do Chef
+                        </h2>
+                        <div class="tips-container">
+                            <div class="tip-card">
+                                <div class="tip-icon">❄️</div>
+                                <div class="tip-content">
+                                    <h3 class="tip-title">Textura Cremosa</h3>
+                                    <p class="tip-description">
+                                        Mexer durante o congelamento é fundamental. Sem isso, o sorvete fica duro e com
+                                        cristais grandes.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="tip-card">
+                                <div class="tip-icon">🌡️</div>
+                                <div class="tip-content">
+                                    <h3 class="tip-title">Temperatura do Freezer</h3>
+                                    <p class="tip-description">
+                                        Freezer muito frio (-18°C) congela rápido demais. Ideal é entre -12°C e -15°C
+                                        para textura suave.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="tip-card">
+                                <div class="tip-icon">🍌</div>
+                                <div class="tip-content">
+                                    <h3 class="tip-title">Bananas Maduras</h3>
+                                    <p class="tip-description">
+                                        Bananas bem maduras (com pintinhas) são mais doces e cremosas, melhorando
+                                        significativamente o resultado.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="tip-card">
+                                <div class="tip-icon">📦</div>
+                                <div class="tip-content">
+                                    <h3 class="tip-title">Armazenamento</h3>
+                                    <p class="tip-description">
+                                        Use recipiente hermético e filme plástico em contato. Isso evita absorção de
+                                        odores e cristalização.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sidebar -->
+                <div class="sidebar">
+
+                    <!-- Nutrition Info -->
+                    <div class="sidebar-card">
+                        <h3 class="card-title">
+                            <span class="title-icon">📊</span>
+                            Informações Nutricionais
+                            <small>(por porção)</small>
+                        </h3>
+                        <div class="nutrition-info">
+                            <div class="nutrition-item">
+                                <span class="nutrition-label">Calorias</span>
+                                <span class="nutrition-value">250 kcal</span>
+                            </div>
+                            <div class="nutrition-item">
+                                <span class="nutrition-label">Carboidratos</span>
+                                <span class="nutrition-value">38g</span>
+                            </div>
+                            <div class="nutrition-item">
+                                <span class="nutrition-label">Proteínas</span>
+                                <span class="nutrition-value">5g</span>
+                            </div>
+                            <div class="nutrition-item">
+                                <span class="nutrition-label">Gorduras</span>
+                                <span class="nutrition-value">9g</span>
+                            </div>
+                            <div class="nutrition-item">
+                                <span class="nutrition-label">Açúcares</span>
+                                <span class="nutrition-value">35g</span>
+                            </div>
+                            <div class="nutrition-item">
+                                <span class="nutrition-label">Antioxidantes</span>
+                                <span class="nutrition-value">Alto</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Benefits -->
+                    <div class="sidebar-card">
+                        <h3 class="card-title">
+                            <span class="title-icon">✨</span>
+                            Benefícios
+                        </h3>
+                        <ul class="benefits-list">
+                            <li class="benefit-item">
+                                <span class="benefit-icon">❄️</span>
+                                <span class="benefit-text">Refrescância natural</span>
+                            </li>
+                            <li class="benefit-item">
+                                <span class="benefit-icon">💜</span>
+                                <span class="benefit-text">Rico em antioxidantes</span>
+                            </li>
+                            <li class="benefit-item">
+                                <span class="benefit-icon">🏠</span>
+                                <span class="benefit-text">Feito em casa, sem conservantes</span>
+                            </li>
+                            <li class="benefit-item">
+                                <span class="benefit-icon">🍌</span>
+                                <span class="benefit-text">Doçura natural das frutas</span>
+                            </li>
+                            <li class="benefit-item">
+                                <span class="benefit-icon">☀️</span>
+                                <span class="benefit-text">Perfeito para dias quentes</span>
+                            </li>
+                            <li class="benefit-item">
+                                <span class="benefit-icon">👨‍👩‍👧‍👦</span>
+                                <span class="benefit-text">Toda família adora</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Process Guide -->
+                    <div class="sidebar-card">
+                        <h3 class="card-title">
+                            <span class="title-icon">⏰</span>
+                            Cronograma de Preparo
+                        </h3>
+                        <div class="process-guide">
+                            <div class="process-item">
+                                <span class="process-time">0h</span>
+                                <span class="process-desc">Preparar mistura base</span>
+                            </div>
+                            <div class="process-item">
+                                <span class="process-time">2h</span>
+                                <span class="process-desc">1ª mexida no freezer</span>
+                            </div>
+                            <div class="process-item">
+                                <span class="process-time">4h</span>
+                                <span class="process-desc">2ª mexida no freezer</span>
+                            </div>
+                            <div class="process-item">
+                                <span class="process-time">6h</span>
+                                <span class="process-desc">3ª mexida final</span>
+                            </div>
+                            <div class="process-item ready">
+                                <span class="process-time">6h+</span>
+                                <span class="process-desc">Pronto para servir!</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Equipment -->
+                    <div class="sidebar-card">
+                        <h3 class="card-title">
+                            <span class="title-icon">🔧</span>
+                            Equipamentos
+                        </h3>
+                        <ul class="benefits-list">
+                            <li class="benefit-item">
+                                <span class="benefit-icon">🥄</span>
+                                <span class="benefit-text">Liquidificador potente</span>
+                            </li>
+                            <li class="benefit-item">
+                                <span class="benefit-icon">🥣</span>
+                                <span class="benefit-text">Tigela para bater creme</span>
+                            </li>
+                            <li class="benefit-item">
+                                <span class="benefit-icon">📦</span>
+                                <span class="benefit-text">Recipiente hermético</span>
+                            </li>
+                            <li class="benefit-item">
+                                <span class="benefit-icon">❄️</span>
+                                <span class="benefit-text">Freezer funcional</span>
+                            </li>
+                            <li class="benefit-item">
+                                <span class="benefit-icon">🍨</span>
+                                <span class="benefit-text">Colher para sorvete (opcional)</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Buy OverBerry -->
+                    <div class="sidebar-card cta-card">
+                        <h3 class="card-title">
+                            <span class="title-icon">🛒</span>
+                            Compre OverBerry
+                        </h3>
+                        <p class="cta-description">
+                            Crie sorvetes caseiros deliciosos e nutritivos com OverBerry!
+                        </p>
+                        <button class="btn-buy-overberry">
+                            Comprar OverBerry
+                        </button>
+                        <div class="product-features">
+                            <div class="feature">✅ 100% Natural</div>
+                            <div class="feature">✅ Liofilizado</div>
+                            <div class="feature">✅ Rico em Antioxidantes</div>
+                        </div>
+                    </div>
+
+                    <!-- Share Recipe -->
+                    <div class="sidebar-card">
+                        <h3 class="card-title">
+                            <span class="title-icon">📤</span>
+                            Compartilhar
+                        </h3>
+                        <div class="share-buttons">
+                            <button class="share-btn whatsapp" data-platform="whatsapp">
+                                <svg class="share-icon" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.864 3.488" />
+                                </svg>
+                                WhatsApp
+                            </button>
+
+                            <button class="share-btn facebook" data-platform="facebook">
+                                <svg class="share-icon" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                                </svg>
+                                Facebook
+                            </button>
+
+                            <button class="share-btn instagram" data-platform="instagram">
+                                <svg class="share-icon" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                                </svg>
+                                Instagram
+                            </button>
+
+                            <button class="share-btn copy" data-platform="copy">
+                                <svg class="share-icon" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z" />
+                                </svg>
+                                Copiar Link
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- Related Recipes -->
+    <section class="related-recipes">
+        <div class="related-container">
+            <h2 class="related-title">Receitas Relacionadas</h2>
+            <div class="related-grid">
+                <div class="related-card">
+                    <img src="../assets/images/mousse.jpg" alt="Mousse de Açaí" class="related-img">
+                    <h3 class="related-name">Mousse de Açaí</h3>
+                    <p class="related-category">Sobremesas</p>
+                </div>
+                <div class="related-card">
+                    <img src="../assets/images/acai.jpg" alt="Açaí Bowl" class="related-img">
+                    <h3 class="related-name">Açaí Bowl Completo</h3>
+                    <p class="related-category">Café da Manhã</p>
+                </div>
+                <div class="related-card">
+                    <img src="../assets/images/pudim.jpg" alt="Pudim de Açaí" class="related-img">
+                    <h3 class="related-name">Pudim de Açaí</h3>
+                    <p class="related-category">Sobremesas</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <div id="footer-container"></div>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Voltar ao topo">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="m18 15-6-6-6 6" />
+        </svg>
+    </button>
+
+    <script src="../receita-individual/script.js"></script>
+    <script src="../components/components.js"></script>
+
+    <style>
+        .process-guide {
+            display: grid;
+            gap: 0.75rem;
+        }
+
+        .process-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 0.75rem;
+            background: #f8fafc;
+            border-radius: 8px;
+            border-left: 3px solid #3b82f6;
+            position: relative;
+        }
+
+        .process-item.ready {
+            background: #f0f9ff;
+            border-left-color: #10b981;
+        }
+
+        .process-item::before {
+            content: '';
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: #3b82f6;
+            flex-shrink: 0;
+        }
+
+        .process-item.ready::before {
+            background: #10b981;
+        }
+
+        .process-time {
+            font-weight: 700;
+            color: #1e293b;
+            font-size: 0.9rem;
+            min-width: 30px;
+        }
+
+        .process-desc {
+            color: #64748b;
+            font-size: 0.85rem;
+            flex: 1;
+        }
+    </style>
+</body>
+
+</html>

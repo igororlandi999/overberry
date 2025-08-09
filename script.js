@@ -1,12 +1,146 @@
 document.addEventListener('DOMContentLoaded', function() {
+    // Mostrar loading screen
+    showLoadingScreen();
+
+    // Simular carregamento da página
+    setTimeout(() => {
+        hideLoadingScreen();
+        initializeHomePage();
+    }, 2000); // 2 segundos de loading para página inicial
+});
+
+// Função para mostrar o loading screen
+function showLoadingScreen() {
+    const loadingHTML = `
+        <div id="overberry-loading" style="
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, #2d1b45 0%, #1e293b 100%);
+            z-index: 10000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        ">
+            <div style="text-align: center; max-width: 400px;">
+                <!-- Brand -->
+                <div style="font-size: 2.5rem; font-weight: 800; color: white; margin-bottom: 3rem;">
+                    Over<span style="color: #4ade80;">Berry</span>
+                </div>
+                
+                <!-- Berry Animation -->
+                <div style="position: relative; width: 120px; height: 120px; margin: 0 auto 2rem;">
+                    <div style="
+                        width: 100%;
+                        height: 100%;
+                        background: linear-gradient(135deg, #4c1d95, #7c3aed, #8b5cf6);
+                        border-radius: 50%;
+                        position: relative;
+                        animation: berryPulse 2s ease-in-out infinite;
+                        box-shadow: 0 0 30px rgba(124, 58, 237, 0.4);
+                    ">
+                        <div style="
+                            position: absolute;
+                            top: 15%;
+                            left: 20%;
+                            width: 25%;
+                            height: 25%;
+                            background: rgba(255, 255, 255, 0.2);
+                            border-radius: 50%;
+                            animation: berryShine 2s ease-in-out infinite;
+                        "></div>
+                        <div style="
+                            position: absolute;
+                            top: -8px;
+                            left: 50%;
+                            transform: translateX(-50%);
+                            width: 20px;
+                            height: 12px;
+                            background: #22c55e;
+                            border-radius: 10px 10px 5px 5px;
+                        "></div>
+                    </div>
+                </div>
+                
+                <!-- Progress -->
+                <div style="width: 100%; max-width: 300px; margin: 0 auto;">
+                    <div style="
+                        width: 100%;
+                        height: 4px;
+                        background: rgba(255, 255, 255, 0.2);
+                        border-radius: 2px;
+                        overflow: hidden;
+                        margin-bottom: 1rem;
+                    ">
+                        <div style="
+                            height: 100%;
+                            background: linear-gradient(90deg, #7c3aed, #4ade80);
+                            border-radius: 2px;
+                            width: 0%;
+                            animation: loadProgress 2s ease-in-out forwards;
+                        "></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <style>
+            @keyframes berryPulse {
+                0%, 100% {
+                    transform: scale(1);
+                    box-shadow: 0 0 30px rgba(124, 58, 237, 0.4);
+                }
+                50% {
+                    transform: scale(1.05);
+                    box-shadow: 0 0 40px rgba(124, 58, 237, 0.6);
+                }
+            }
+
+            @keyframes berryShine {
+                0%, 100% { opacity: 0.2; }
+                50% { opacity: 0.6; }
+            }
+
+            @keyframes loadProgress {
+                0% { width: 0%; }
+                70% { width: 85%; }
+                100% { width: 100%; }
+            }
+        </style>
+    `;
+
+    document.body.insertAdjacentHTML('afterbegin', loadingHTML);
+}
+
+// Função para esconder o loading screen
+function hideLoadingScreen() {
+    const loading = document.getElementById('overberry-loading');
+    if (loading) {
+        loading.style.opacity = '0';
+        loading.style.transition = 'opacity 0.5s ease';
+        
+        setTimeout(() => {
+            loading.remove();
+        }, 500);
+    }
+}
+
+// Função principal que inicializa a página inicial
+function initializeHomePage() {
     const mobileMenuBtn = document.getElementById('mobileMenuBtn');
     const navMenu = document.getElementById('navMenu');
 
-    // Mobile menu toggle
-    mobileMenuBtn.addEventListener('click', function() {
-        navMenu.classList.toggle('active');
-        mobileMenuBtn.classList.toggle('active');
-    });
+    if (mobileMenuBtn && navMenu) {
+        // Mobile menu toggle
+        mobileMenuBtn.addEventListener('click', function() {
+            navMenu.classList.toggle('active');
+            mobileMenuBtn.classList.toggle('active');
+        });
+    }
 
     // Navigation links functionality
     const navLinks = document.querySelectorAll('.nav-link, .footer-link');
@@ -50,7 +184,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // Button click handlers
-    const buttons = document.querySelectorAll('.btn-primary, .btn-secondary, .cta-button, .btn-buy, .btn-download');
+    const buttons = document.querySelectorAll('.btn-primary, .btn-secondary, .cta-button, .btn-buy, .btn-download, .btn-recipe');
     
     buttons.forEach(button => {
         button.addEventListener('click', function() {
@@ -71,6 +205,20 @@ document.addEventListener('DOMContentLoaded', function() {
             } else if (this.textContent.includes('veja mais receitas')) {
                 // Redireciona para a página de receitas
                 window.location.href = 'receitas.html';
+            } else if (this.classList.contains('btn-recipe')) {
+                // Redireciona para páginas específicas de receitas
+                const recipeType = this.getAttribute('data-recipe');
+                if (recipeType) {
+                    // Mapeamento dos data-recipe para os nomes corretos dos arquivos
+                    const recipeMapping = {
+                        'smoothie': 'smoothie-energetico.html',
+                        'acai-bowl': 'acai-bowl-completo.html', 
+                        'vitamina': 'vitamina.html'
+                    };
+                    
+                    const fileName = recipeMapping[recipeType] || `${recipeType}.html`;
+                    window.location.href = `paginas-receitas/${fileName}`;
+                }
             }
         });
     });
@@ -107,7 +255,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Header scroll effect
     setupHeaderScroll();
-});
+
+    console.log('Página inicial OverBerry carregada com sucesso!');
+    console.log('Funcionalidades ativas: Navegação, Animações, Botões, Scroll Effects');
+}
 
 // Função para animações da seção About
 function setupAboutAnimations() {
@@ -115,10 +266,7 @@ function setupAboutAnimations() {
     const aboutObserver = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                if (entry.target.classList.contains('about-stats')) {
-                    // Animar contadores
-                    animateCounters();
-                } else if (entry.target.classList.contains('values-list')) {
+                if (entry.target.classList.contains('values-list')) {
                     // Animar valores com delay
                     animateValues();
                 }
@@ -128,44 +276,10 @@ function setupAboutAnimations() {
         threshold: 0.3
     });
 
-    // Observar estatísticas e valores
-    const statsSection = document.querySelector('.about-stats');
+    // Observar valores
     const valuesSection = document.querySelector('.values-list');
     
-    if (statsSection) aboutObserver.observe(statsSection);
     if (valuesSection) aboutObserver.observe(valuesSection);
-}
-
-// Função para animar contadores
-function animateCounters() {
-    const counters = document.querySelectorAll('.stat-number');
-    
-    counters.forEach(counter => {
-        const target = parseInt(counter.getAttribute('data-target'));
-        const increment = target / 60; // Duração de ~1 segundo (60fps)
-        let current = 0;
-        
-        const updateCounter = () => {
-            if (current < target) {
-                current += increment;
-                if (target === 100) {
-                    counter.textContent = Math.floor(current) + '+';
-                } else if (target === 5) {
-                    counter.textContent = Math.floor(current) + ' anos';
-                }
-                requestAnimationFrame(updateCounter);
-            } else {
-                // Valor final
-                if (target === 100) {
-                    counter.textContent = target + '+';
-                } else if (target === 5) {
-                    counter.textContent = target + ' anos';
-                }
-            }
-        };
-        
-        updateCounter();
-    });
 }
 
 // Função para animar valores

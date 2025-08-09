@@ -1,387 +1,548 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Overberry - Açaí Liofilizado Premium</title>
-    <meta name="description" content="Adicione açaí em suas receitas favoritas. Nutritivo, saboroso e cheio de energia natural.">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <title>Receitas OverBerry - Deliciosas e Nutritivas</title>
+    <link rel="stylesheet" href="receitas/styles.css">
 </head>
+
 <body>
-    <!-- Navbar -->
-    <nav class="navbar" id="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <h2>Overberry</h2>
-            </div>
-            
-            <ul class="nav-menu" id="nav-menu">
-                <li class="nav-item"><a href="#produto" class="nav-link">Produto</a></li>
-                <li class="nav-item"><a href="#beneficios" class="nav-link">Benefícios</a></li>
-                <li class="nav-item"><a href="#receitas" class="nav-link">Receitas</a></li>
-                <li class="nav-item"><a href="#sobre" class="nav-link">Sobre</a></li>
-                <li class="nav-item"><a href="#contato" class="nav-link">Contato</a></li>
-            </ul>
-
-            <button class="cta-button desktop-only">Experimentar Agora</button>
-
-            <div class="nav-toggle" id="nav-toggle">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-        </div>
-    </nav>
+    <!-- Header -->
+    <div id="navbar-container"></div>
 
     <!-- Hero Section -->
-    <section class="hero" id="produto">
-        <div class="hero-background">
-            <div class="floating-element element-1"></div>
-            <div class="floating-element element-2"></div>
-            <div class="floating-element element-3"></div>
-        </div>
-
-        <div class="hero-container">
-            <div class="hero-content">
-                <h1 class="hero-title">
-                    <span class="gradient-text">Adicione açaí</span><br>
-                    <span class="dark-text">em suas receitas favoritas</span>
-                </h1>
-                
-                <p class="hero-subtitle">Nutritivo, saboroso e cheio de energia natural</p>
-                
-                <div class="products-showcase">
-                    <div class="product-item package-container">
-                        <img src="/placeholder.svg?height=400&width=300&text=Embalagem+Overberry" alt="Embalagem Overberry" class="package-img">
-                        <div class="product-badge">Novo!</div>
-                    </div>
-                    <div class="product-item bowl-container">
-                        <img src="/placeholder.svg?height=300&width=250&text=Bowl+de+Açaí" alt="Bowl de Açaí" class="bowl-img">
-                    </div>
-                </div>
-                
-                <div class="hero-buttons">
-                    <button class="btn btn-primary">
-                        Quero Experimentar
-                        <svg class="btn-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M5 12h14M12 5l7 7-7 7"/>
-                        </svg>
-                    </button>
-                    <button class="btn btn-secondary">Ver Receitas</button>
-                </div>
-            </div>
-        </div>
-
-        <div class="scroll-indicator">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M6 9l6 6 6-6"/>
-            </svg>
+    <section class="recipes-hero">
+        <div class="hero-content">
+            <h1 class="hero-title">
+                Receitas <span class="highlight">OverBerry</span>
+            </h1>
+            <p class="hero-subtitle">
+                Desperte sua criatividade culinária com nossas receitas exclusivas. 
+                Transforme o açaí liofilizado em experiências gastronômicas incríveis.
+            </p>
         </div>
     </section>
 
-    <!-- Benefits Section -->
-    <section class="benefits" id="beneficios">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title gradient-text">Por que escolher Overberry?</h2>
-                <p class="section-subtitle">Nosso açaí liofilizado preserva todos os nutrientes e sabor do açaí fresco</p>
-            </div>
-
-            <div class="benefits-grid">
-                <div class="benefit-card" data-aos="fade-up" data-delay="0">
-                    <div class="benefit-icon">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
-                        </svg>
-                    </div>
-                    <h3 class="benefit-title">Rico em Antioxidantes</h3>
-                    <p class="benefit-description">Combate os radicais livres e fortalece o sistema imunológico</p>
-                </div>
-
-                <div class="benefit-card" data-aos="fade-up" data-delay="200">
-                    <div class="benefit-icon">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
-                        </svg>
-                    </div>
-                    <h3 class="benefit-title">Energia Natural</h3>
-                    <p class="benefit-description">Fornece energia duradoura sem picos de açúcar no sangue</p>
-                </div>
-
-                <div class="benefit-card" data-aos="fade-up" data-delay="400">
-                    <div class="benefit-icon">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M7 20l4-16m2 16l4-16M6 9h14M4 15h14"/>
-                        </svg>
-                    </div>
-                    <h3 class="benefit-title">100% Natural</h3>
-                    <p class="benefit-description">Sem conservantes, corantes ou aditivos artificiais</p>
-                </div>
+    <!-- Filter Section -->
+    <section class="filter-section">
+        <div class="filter-container">
+            <h2 class="filter-title">Filtrar por categoria</h2>
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">Todas</button>
+                <button class="filter-btn" data-filter="cafe-da-manha">Café da Manhã</button>
+                <button class="filter-btn" data-filter="bebidas">Bebidas</button>
+                <button class="filter-btn" data-filter="sobremesa">Sobremesas</button>
+                <button class="filter-btn" data-filter="lanches">Lanches</button>
+                <button class="filter-btn" data-filter="pos-treino">Pós Treino</button>
             </div>
         </div>
     </section>
 
-    <!-- Recipes Section -->
-    <section class="recipes" id="receitas">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title gradient-text">Receitas Deliciosas</h2>
-                <p class="section-subtitle">Descubra maneiras incríveis de usar o açaí Overberry no seu dia a dia</p>
+    <!-- Recipes Grid -->
+    <section class="recipes-section">
+        <div class="recipes-container">
+            <div class="recipes-grid" id="recipesGrid">
+                
+                <!-- Café da Manhã -->
+                <div class="recipe-card" data-category="cafe-da-manha">
+                    <div class="recipe-image">
+                        <img src="assets/images/smoothie.png" alt="Smoothie Energético" class="recipe-img">
+                        <div class="recipe-category-tag">Café da Manhã</div>
+                    </div>
+                    <h3 class="recipe-title">Smoothie Energético</h3>
+                    <div class="recipe-meta">
+                        <span class="recipe-time">5 min</span>
+                        <span class="recipe-difficulty">Fácil</span>
+                    </div>
+                    <div class="recipe-ingredients">
+                        <p class="ingredients-title">Ingredientes:</p>
+                        <ul class="ingredients-list">
+                            <li>2 scoops de OverBerry</li>
+                            <li>1 banana</li>
+                            <li>200ml leite vegetal</li>
+                            <li>1 colher mel</li>
+                        </ul>
+                    </div>
+                    <button class="btn-recipe" data-recipe="smoothie-energetico">Ver receita completa</button>
+                </div>
+
+                <div class="recipe-card" data-category="cafe-da-manha">
+                    <div class="recipe-image">
+                        <img src="assets/images/acai.jpg" alt="Açaí Bowl Completo" class="recipe-img">
+                        <div class="recipe-category-tag">Café da Manhã</div>
+                    </div>
+                    <h3 class="recipe-title">Açaí Bowl Completo</h3>
+                    <div class="recipe-meta">
+                        <span class="recipe-time">10 min</span>
+                        <span class="recipe-difficulty">Fácil</span>
+                    </div>
+                    <div class="recipe-ingredients">
+                        <p class="ingredients-title">Ingredientes:</p>
+                        <ul class="ingredients-list">
+                            <li>3 scoops de OverBerry</li>
+                            <li>Banana congelada</li>
+                            <li>Granola artesanal</li>
+                            <li>Frutas vermelhas</li>
+                        </ul>
+                    </div>
+                    <button class="btn-recipe" data-recipe="acai-bowl">Ver receita completa</button>
+                </div>
+
+                <div class="recipe-card" data-category="cafe-da-manha">
+                    <div class="recipe-image">
+                        <img src="assets/images/panqueca.jpg" alt="Panqueca de Açaí" class="recipe-img">
+                        <div class="recipe-category-tag">Café da Manhã</div>
+                    </div>
+                    <h3 class="recipe-title">Panqueca de Açaí</h3>
+                    <div class="recipe-meta">
+                        <span class="recipe-time">15 min</span>
+                        <span class="recipe-difficulty">Médio</span>
+                    </div>
+                    <div class="recipe-ingredients">
+                        <p class="ingredients-title">Ingredientes:</p>
+                        <ul class="ingredients-list">
+                            <li>2 scoops de OverBerry</li>
+                            <li>1 ovo</li>
+                            <li>1/2 xícara farinha aveia</li>
+                            <li>Leite vegetal</li>
+                        </ul>
+                    </div>
+                    <button class="btn-recipe" data-recipe="panqueca-acai">Ver receita completa</button>
+                </div>
+
+                <div class="recipe-card" data-category="cafe-da-manha">
+                    <div class="recipe-image">
+                        <img src="assets/images/overnight-oats.jpg" alt="Overnight Oats Açaí" class="recipe-img">
+                        <div class="recipe-category-tag">Café da Manhã</div>
+                    </div>
+                    <h3 class="recipe-title">Overnight Oats Açaí</h3>
+                    <div class="recipe-meta">
+                        <span class="recipe-time">8h prep</span>
+                        <span class="recipe-difficulty">Muito Fácil</span>
+                    </div>
+                    <div class="recipe-ingredients">
+                        <p class="ingredients-title">Ingredientes:</p>
+                        <ul class="ingredients-list">
+                            <li>2 scoops de OverBerry</li>
+                            <li>1/2 xícara aveia</li>
+                            <li>Leite de coco</li>
+                            <li>Chia</li>
+                        </ul>
+                    </div>
+                    <button class="btn-recipe" data-recipe="overnight-oats">Ver receita completa</button>
+                </div>
+
+                <div class="recipe-card" data-category="cafe-da-manha">
+                    <div class="recipe-image">
+                        <img src="assets/images/muffin.jpg" alt="Muffin de Açaí" class="recipe-img">
+                        <div class="recipe-category-tag">Café da Manhã</div>
+                    </div>
+                    <h3 class="recipe-title">Muffin de Açaí</h3>
+                    <div class="recipe-meta">
+                        <span class="recipe-time">25 min</span>
+                        <span class="recipe-difficulty">Médio</span>
+                    </div>
+                    <div class="recipe-ingredients">
+                        <p class="ingredients-title">Ingredientes:</p>
+                        <ul class="ingredients-list">
+                            <li>3 scoops de OverBerry</li>
+                            <li>Farinha integral</li>
+                            <li>Banana amassada</li>
+                            <li>Óleo de coco</li>
+                        </ul>
+                    </div>
+                    <button class="btn-recipe" data-recipe="muffin-acai">Ver receita completa</button>
+                </div>
+
+                <!-- Bebidas -->
+                <div class="recipe-card" data-category="bebidas">
+                    <div class="recipe-image">
+                        <img src="assets/images/vitamina.jpg" alt="Vitamina Pré-Treino" class="recipe-img">
+                        <div class="recipe-category-tag">Bebidas</div>
+                    </div>
+                    <h3 class="recipe-title">Vitamina Pré-Treino</h3>
+                    <div class="recipe-meta">
+                        <span class="recipe-time">3 min</span>
+                        <span class="recipe-difficulty">Muito Fácil</span>
+                    </div>
+                    <div class="recipe-ingredients">
+                        <p class="ingredients-title">Ingredientes:</p>
+                        <ul class="ingredients-list">
+                            <li>2 scoops de OverBerry</li>
+                            <li>Água gelada</li>
+                            <li>1 colher aveia</li>
+                            <li>Canela</li>
+                        </ul>
+                    </div>
+                    <button class="btn-recipe" data-recipe="vitamina-pre-treino">Ver receita completa</button>
+                </div>
+
+                <div class="recipe-card" data-category="bebidas">
+                    <div class="recipe-image">
+                        <img src="assets/images/limonada.jpg" alt="Limonada de Açaí" class="recipe-img">
+                        <div class="recipe-category-tag">Bebidas</div>
+                    </div>
+                    <h3 class="recipe-title">Limonada de Açaí</h3>
+                    <div class="recipe-meta">
+                        <span class="recipe-time">5 min</span>
+                        <span class="recipe-difficulty">Fácil</span>
+                    </div>
+                    <div class="recipe-ingredients">
+                        <p class="ingredients-title">Ingredientes:</p>
+                        <ul class="ingredients-list">
+                            <li>1 scoop de OverBerry</li>
+                            <li>Suco de limão</li>
+                            <li>Água com gás</li>
+                            <li>Hortelã fresca</li>
+                        </ul>
+                    </div>
+                    <button class="btn-recipe" data-recipe="limonada-acai">Ver receita completa</button>
+                </div>
+
+                <div class="recipe-card" data-category="bebidas">
+                    <div class="recipe-image">
+                        <img src="assets/images/shake.jpg" alt="Shake Proteico" class="recipe-img">
+                        <div class="recipe-category-tag">Bebidas</div>
+                    </div>
+                    <h3 class="recipe-title">Shake Proteico de Açaí</h3>
+                    <div class="recipe-meta">
+                        <span class="recipe-time">3 min</span>
+                        <span class="recipe-difficulty">Fácil</span>
+                    </div>
+                    <div class="recipe-ingredients">
+                        <p class="ingredients-title">Ingredientes:</p>
+                        <ul class="ingredients-list">
+                            <li>2 scoops de OverBerry</li>
+                            <li>Whey protein</li>
+                            <li>Leite desnatado</li>
+                            <li>Pasta de amendoim</li>
+                        </ul>
+                    </div>
+                    <button class="btn-recipe" data-recipe="shake-proteico">Ver receita completa</button>
+                </div>
+
+                <div class="recipe-card" data-category="bebidas">
+                    <div class="recipe-image">
+                        <img src="assets/images/agua.jpg" alt="Água Saborizada" class="recipe-img">
+                        <div class="recipe-category-tag">Bebidas</div>
+                    </div>
+                    <h3 class="recipe-title">Água Saborizada Açaí</h3>
+                    <div class="recipe-meta">
+                        <span class="recipe-time">2 min</span>
+                        <span class="recipe-difficulty">Muito Fácil</span>
+                    </div>
+                    <div class="recipe-ingredients">
+                        <p class="ingredients-title">Ingredientes:</p>
+                        <ul class="ingredients-list">
+                            <li>1 scoop de OverBerry</li>
+                            <li>500ml água gelada</li>
+                            <li>Gotas de limão</li>
+                            <li>Gelo</li>
+                        </ul>
+                    </div>
+                    <button class="btn-recipe" data-recipe="agua-saborizada">Ver receita completa</button>
+                </div>
+
+                <div class="recipe-card" data-category="bebidas">
+                    <div class="recipe-image">
+                        <img src="assets/images/bubble.jpg" alt="Bubble Tea Açaí" class="recipe-img">
+                        <div class="recipe-category-tag">Bebidas</div>
+                    </div>
+                    <h3 class="recipe-title">Bubble Tea de Açaí</h3>
+                    <div class="recipe-meta">
+                        <span class="recipe-time">15 min</span>
+                        <span class="recipe-difficulty">Médio</span>
+                    </div>
+                    <div class="recipe-ingredients">
+                        <p class="ingredients-title">Ingredientes:</p>
+                        <ul class="ingredients-list">
+                            <li>2 scoops de OverBerry</li>
+                            <li>Leite de coco</li>
+                            <li>Bolinhas de tapioca</li>
+                            <li>Mel</li>
+                        </ul>
+                    </div>
+                    <button class="btn-recipe" data-recipe="bubble-tea">Ver receita completa</button>
+                </div>
+
+                <!-- Sobremesas -->
+                <div class="recipe-card" data-category="sobremesa">
+                    <div class="recipe-image">
+                        <img src="assets/images/mousse.jpg" alt="Mousse de Açaí" class="recipe-img">
+                        <div class="recipe-category-tag">Sobremesas</div>
+                    </div>
+                    <h3 class="recipe-title">Mousse de Açaí</h3>
+                    <div class="recipe-meta">
+                        <span class="recipe-time">20 min</span>
+                        <span class="recipe-difficulty">Médio</span>
+                    </div>
+                    <div class="recipe-ingredients">
+                        <p class="ingredients-title">Ingredientes:</p>
+                        <ul class="ingredients-list">
+                            <li>3 scoops de OverBerry</li>
+                            <li>Creme de leite</li>
+                            <li>Açúcar cristal</li>
+                            <li>Gelatina incolor</li>
+                        </ul>
+                    </div>
+                    <button class="btn-recipe" data-recipe="mousse-acai">Ver receita completa</button>
+                </div>
+
+                <div class="recipe-card" data-category="sobremesa">
+                    <div class="recipe-image">
+                        <img src="assets/images/cheesecake.jpg" alt="Cheesecake de Açaí" class="recipe-img">
+                        <div class="recipe-category-tag">Sobremesas</div>
+                    </div>
+                    <h3 class="recipe-title">Cheesecake de Açaí</h3>
+                    <div class="recipe-meta">
+                        <span class="recipe-time">4h prep</span>
+                        <span class="recipe-difficulty">Difícil</span>
+                    </div>
+                    <div class="recipe-ingredients">
+                        <p class="ingredients-title">Ingredientes:</p>
+                        <ul class="ingredients-list">
+                            <li>4 scoops de OverBerry</li>
+                            <li>Cream cheese</li>
+                            <li>Biscoito triturado</li>
+                            <li>Manteiga</li>
+                        </ul>
+                    </div>
+                    <button class="btn-recipe" data-recipe="cheesecake-acai">Ver receita completa</button>
+                </div>
+
+                <div class="recipe-card" data-category="sobremesa">
+                    <div class="recipe-image">
+                        <img src="assets/images/sorvete.jpg" alt="Sorvete de Açaí" class="recipe-img">
+                        <div class="recipe-category-tag">Sobremesas</div>
+                    </div>
+                    <h3 class="recipe-title">Sorvete Caseiro de Açaí</h3>
+                    <div class="recipe-meta">
+                        <span class="recipe-time">6h prep</span>
+                        <span class="recipe-difficulty">Médio</span>
+                    </div>
+                    <div class="recipe-ingredients">
+                        <p class="ingredients-title">Ingredientes:</p>
+                        <ul class="ingredients-list">
+                            <li>3 scoops de OverBerry</li>
+                            <li>Leite condensado</li>
+                            <li>Creme de leite</li>
+                            <li>Banana</li>
+                        </ul>
+                    </div>
+                    <button class="btn-recipe" data-recipe="sorvete-acai">Ver receita completa</button>
+                </div>
+
+                <div class="recipe-card" data-category="sobremesa">
+                    <div class="recipe-image">
+                        <img src="assets/images/pudim.jpg" alt="Pudim de Açaí" class="recipe-img">
+                        <div class="recipe-category-tag">Sobremesas</div>
+                    </div>
+                    <h3 class="recipe-title">Pudim de Açaí</h3>
+                    <div class="recipe-meta">
+                        <span class="recipe-time">45 min</span>
+                        <span class="recipe-difficulty">Médio</span>
+                    </div>
+                    <div class="recipe-ingredients">
+                        <p class="ingredients-title">Ingredientes:</p>
+                        <ul class="ingredients-list">
+                            <li>3 scoops de OverBerry</li>
+                            <li>Leite integral</li>
+                            <li>Ovos</li>
+                            <li>Açúcar para calda</li>
+                        </ul>
+                    </div>
+                    <button class="btn-recipe" data-recipe="pudim-acai">Ver receita completa</button>
+                </div>
+
+                <!-- Lanches -->
+                <div class="recipe-card" data-category="lanches">
+                    <div class="recipe-image">
+                        <img src="assets/images/barrinha.jpg" alt="Barra de Cereal" class="recipe-img">
+                        <div class="recipe-category-tag">Lanches</div>
+                    </div>
+                    <h3 class="recipe-title">Barra de Cereal Açaí</h3>
+                    <div class="recipe-meta">
+                        <span class="recipe-time">30 min</span>
+                        <span class="recipe-difficulty">Fácil</span>
+                    </div>
+                    <div class="recipe-ingredients">
+                        <p class="ingredients-title">Ingredientes:</p>
+                        <ul class="ingredients-list">
+                            <li>2 scoops de OverBerry</li>
+                            <li>Aveia em flocos</li>
+                            <li>Castanhas mistas</li>
+                            <li>Mel</li>
+                        </ul>
+                    </div>
+                    <button class="btn-recipe" data-recipe="barra-cereal">Ver receita completa</button>
+                </div>
+
+                <div class="recipe-card" data-category="lanches">
+                    <div class="recipe-image">
+                        <img src="assets/images/bolinhas.jpg" alt="Bolinha Energética" class="recipe-img">
+                        <div class="recipe-category-tag">Lanches</div>
+                    </div>
+                    <h3 class="recipe-title">Bolinhas Energéticas</h3>
+                    <div class="recipe-meta">
+                        <span class="recipe-time">15 min</span>
+                        <span class="recipe-difficulty">Fácil</span>
+                    </div>
+                    <div class="recipe-ingredients">
+                        <p class="ingredients-title">Ingredientes:</p>
+                        <ul class="ingredients-list">
+                            <li>2 scoops de OverBerry</li>
+                            <li>Tâmaras sem caroço</li>
+                            <li>Castanha de caju</li>
+                            <li>Coco ralado</li>
+                        </ul>
+                    </div>
+                    <button class="btn-recipe" data-recipe="bolinhas-energeticas">Ver receita completa</button>
+                </div>
+
+                <div class="recipe-card" data-category="lanches">
+                    <div class="recipe-image">
+                        <img src="assets/images/cookie.jpg" alt="Cookie de Açaí" class="recipe-img">
+                        <div class="recipe-category-tag">Lanches</div>
+                    </div>
+                    <h3 class="recipe-title">Cookie Funcional</h3>
+                    <div class="recipe-meta">
+                        <span class="recipe-time">25 min</span>
+                        <span class="recipe-difficulty">Médio</span>
+                    </div>
+                    <div class="recipe-ingredients">
+                        <p class="ingredients-title">Ingredientes:</p>
+                        <ul class="ingredients-list">
+                            <li>2 scoops de OverBerry</li>
+                            <li>Farinha de amêndoas</li>
+                            <li>Óleo de coco</li>
+                            <li>Chocolate 70%</li>
+                        </ul>
+                    </div>
+                    <button class="btn-recipe" data-recipe="cookie-funcional">Ver receita completa</button>
+                </div>
+
+                <div class="recipe-card" data-category="lanches">
+                    <div class="recipe-image">
+                        <img src="assets/images/pao.jpg" alt="Pão de Açaí" class="recipe-img">
+                        <div class="recipe-category-tag">Lanches</div>
+                    </div>
+                    <h3 class="recipe-title">Pão de Açaí Fit</h3>
+                    <div class="recipe-meta">
+                        <span class="recipe-time">40 min</span>
+                        <span class="recipe-difficulty">Médio</span>
+                    </div>
+                    <div class="recipe-ingredients">
+                        <p class="ingredients-title">Ingredientes:</p>
+                        <ul class="ingredients-list">
+                            <li>3 scoops de OverBerry</li>
+                            <li>Farinha integral</li>
+                            <li>Fermento biológico</li>
+                            <li>Azeite extravirgem</li>
+                        </ul>
+                    </div>
+                    <button class="btn-recipe" data-recipe="pao-acai-fit">Ver receita completa</button>
+                </div>
+
+                <!-- Pós Treino -->
+                <div class="recipe-card" data-category="pos-treino">
+                    <div class="recipe-image">
+                        <img src="assets/images/smoothie.jpg" alt="Smoothie Recovery" class="recipe-img">
+                        <div class="recipe-category-tag">Pós Treino</div>
+                    </div>
+                    <h3 class="recipe-title">Smoothie Recovery</h3>
+                    <div class="recipe-meta">
+                        <span class="recipe-time">5 min</span>
+                        <span class="recipe-difficulty">Fácil</span>
+                    </div>
+                    <div class="recipe-ingredients">
+                        <p class="ingredients-title">Ingredientes:</p>
+                        <ul class="ingredients-list">
+                            <li>3 scoops de OverBerry</li>
+                            <li>Whey protein</li>
+                            <li>Banana</li>
+                            <li>Leite de amêndoas</li>
+                        </ul>
+                    </div>
+                    <button class="btn-recipe" data-recipe="smoothie-recovery">Ver receita completa</button>
+                </div>
+
+                <div class="recipe-card" data-category="pos-treino">
+                    <div class="recipe-image">
+                        <img src="assets/images/bowl-proteico.jpg" alt="Bowl Proteico" class="recipe-img">
+                        <div class="recipe-category-tag">Pós Treino</div>
+                    </div>
+                    <h3 class="recipe-title">Bowl Proteico Açaí</h3>
+                    <div class="recipe-meta">
+                        <span class="recipe-time">8 min</span>
+                        <span class="recipe-difficulty">Fácil</span>
+                    </div>
+                    <div class="recipe-ingredients">
+                        <p class="ingredients-title">Ingredientes:</p>
+                        <ul class="ingredients-list">
+                            <li>3 scoops de OverBerry</li>
+                            <li>Quinoa cozida</li>
+                            <li>Pasta de amendoim</li>
+                            <li>Sementes de chia</li>
+                        </ul>
+                    </div>
+                    <button class="btn-recipe" data-recipe="bowl-proteico">Ver receita completa</button>
+                </div>
+
+                <div class="recipe-card" data-category="pos-treino">
+                    <div class="recipe-image">
+                        <img src="assets/images/shake-recuperacao.jpg" alt="Shake Recuperação" class="recipe-img">
+                        <div class="recipe-category-tag">Pós Treino</div>
+                    </div>
+                    <h3 class="recipe-title">Shake Recuperação</h3>
+                    <div class="recipe-meta">
+                        <span class="recipe-time">3 min</span>
+                        <span class="recipe-difficulty">Muito Fácil</span>
+                    </div>
+                    <div class="recipe-ingredients">
+                        <p class="ingredients-title">Ingredientes:</p>
+                        <ul class="ingredients-list">
+                            <li>2 scoops de OverBerry</li>
+                            <li>BCAA</li>
+                            <li>Água de coco</li>
+                            <li>Creatina</li>
+                        </ul>
+                    </div>
+                    <button class="btn-recipe" data-recipe="shake-recuperacao">Ver receita completa</button>
+                </div>
+
             </div>
 
-            <div class="recipes-grid">
-                <div class="recipe-card" data-aos="fade-up" data-delay="0">
-                    <div class="recipe-image">
-                        <img src="/placeholder.svg?height=200&width=300&text=Smoothie+Bowl" alt="Smoothie Bowl Tropical">
-                        <div class="recipe-difficulty">Fácil</div>
-                    </div>
-                    <div class="recipe-content">
-                        <div class="recipe-meta">
-                            <span class="recipe-time">
-                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <circle cx="12" cy="12" r="10"/>
-                                    <polyline points="12,6 12,12 16,14"/>
-                                </svg>
-                                5 min
-                            </span>
-                            <span class="recipe-servings">
-                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
-                                    <circle cx="12" cy="7" r="4"/>
-                                </svg>
-                                1-2 pessoas
-                            </span>
-                        </div>
-                        <h3 class="recipe-title">Smoothie Bowl Tropical</h3>
-                        <p class="recipe-description">Um bowl refrescante e nutritivo para começar o dia com energia!</p>
-                        <div class="recipe-ingredients">
-                            <h4>Ingredientes:</h4>
-                            <ul>
-                                <li>2 colheres de açaí Overberry</li>
-                                <li>1 banana</li>
-                                <li>Manga</li>
-                                <li>Coco ralado</li>
-                                <li>Granola</li>
-                            </ul>
-                        </div>
-                        <button class="btn btn-primary recipe-btn">Ver Receita Completa</button>
-                    </div>
-                </div>
-
-                <div class="recipe-card" data-aos="fade-up" data-delay="200">
-                    <div class="recipe-image">
-                        <img src="/placeholder.svg?height=200&width=300&text=Vitamina+Energética" alt="Vitamina Energética">
-                        <div class="recipe-difficulty">Fácil</div>
-                    </div>
-                    <div class="recipe-content">
-                        <div class="recipe-meta">
-                            <span class="recipe-time">
-                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <circle cx="12" cy="12" r="10"/>
-                                    <polyline points="12,6 12,12 16,14"/>
-                                </svg>
-                                3 min
-                            </span>
-                            <span class="recipe-servings">
-                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
-                                    <circle cx="12" cy="7" r="4"/>
-                                </svg>
-                                1-2 pessoas
-                            </span>
-                        </div>
-                        <h3 class="recipe-title">Vitamina Energética</h3>
-                        <p class="recipe-description">Perfeita para o pré-treino ou quando precisar de energia extra!</p>
-                        <div class="recipe-ingredients">
-                            <h4>Ingredientes:</h4>
-                            <ul>
-                                <li>1 colher de açaí Overberry</li>
-                                <li>Leite de coco</li>
-                                <li>Banana</li>
-                                <li>Mel</li>
-                                <li>Gelo</li>
-                            </ul>
-                        </div>
-                        <button class="btn btn-primary recipe-btn">Ver Receita Completa</button>
-                    </div>
-                </div>
-
-                <div class="recipe-card" data-aos="fade-up" data-delay="400">
-                    <div class="recipe-image">
-                        <img src="/placeholder.svg?height=200&width=300&text=Sorvete+de+Açaí" alt="Sorvete de Açaí">
-                        <div class="recipe-difficulty">Médio</div>
-                    </div>
-                    <div class="recipe-content">
-                        <div class="recipe-meta">
-                            <span class="recipe-time">
-                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <circle cx="12" cy="12" r="10"/>
-                                    <polyline points="12,6 12,12 16,14"/>
-                                </svg>
-                                15 min
-                            </span>
-                            <span class="recipe-servings">
-                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
-                                    <circle cx="12" cy="7" r="4"/>
-                                </svg>
-                                1-2 pessoas
-                            </span>
-                        </div>
-                        <h3 class="recipe-title">Sorvete de Açaí</h3>
-                        <p class="recipe-description">Uma sobremesa saudável e deliciosa para toda a família!</p>
-                        <div class="recipe-ingredients">
-                            <h4>Ingredientes:</h4>
-                            <ul>
-                                <li>3 colheres de açaí Overberry</li>
-                                <li>Leite condensado</li>
-                                <li>Creme de leite</li>
-                                <li>Frutas vermelhas</li>
-                            </ul>
-                        </div>
-                        <button class="btn btn-primary recipe-btn">Ver Receita Completa</button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="recipes-cta">
-                <button class="btn btn-secondary">
-                    Ver Todas as Receitas
-                    <svg class="btn-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M5 12h14M12 5l7 7-7 7"/>
-                    </svg>
-                </button>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section class="about" id="sobre">
-        <div class="container">
-            <div class="about-content">
-                <div class="about-text" data-aos="fade-right">
-                    <h2 class="section-title gradient-text">Nossa História</h2>
-                    <p class="about-description">
-                        A Overberry nasceu da paixão por levar o melhor do açaí amazônico para sua mesa. 
-                        Utilizamos tecnologia de liofilização que preserva 100% dos nutrientes e sabor original.
-                    </p>
-                    <p class="about-description">
-                        Nosso compromisso é com a qualidade, sustentabilidade e o bem-estar de nossos clientes. 
-                        Cada embalagem carrega o cuidado e a tradição da Amazônia.
-                    </p>
-                    <div class="about-stats">
-                        <div class="stat-item">
-                            <div class="stat-number">100%</div>
-                            <div class="stat-label">Natural</div>
-                        </div>
-                        <div class="stat-item">
-                            <div class="stat-number">5+</div>
-                            <div class="stat-label">Anos de experiência</div>
-                        </div>
-                        <div class="stat-item">
-                            <div class="stat-number">1000+</div>
-                            <div class="stat-label">Clientes satisfeitos</div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="about-image" data-aos="fade-left">
-                    <img src="/placeholder.svg?height=400&width=500&text=Plantação+de+Açaí" alt="Plantação de Açaí">
-                    <div class="rating-card">
-                        <div class="stars">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                                <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/>
-                            </svg>
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                                <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/>
-                            </svg>
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                                <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/>
-                            </svg>
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                                <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/>
-                            </svg>
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                                <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/>
-                            </svg>
-                            <span class="rating-number">4.9/5</span>
-                        </div>
-                        <p class="rating-text">Avaliação dos clientes</p>
-                    </div>
-                </div>
+            <!-- Load More Button -->
+            <div class="load-more-section">
+                <button class="btn-load-more" id="loadMoreBtn">Carregar mais receitas</button>
+                <p class="load-more-text">Mais receitas chegando em breve!</p>
             </div>
         </div>
     </section>
 
     <!-- CTA Section -->
     <section class="cta-section">
-        <div class="container">
-            <div class="cta-content" data-aos="fade-up">
-                <h2 class="cta-title">Pronto para experimentar?</h2>
-                <p class="cta-subtitle">Transforme suas receitas com o açaí mais puro e nutritivo do mercado</p>
-                <div class="cta-buttons">
-                    <button class="btn btn-white">
-                        Comprar Agora
-                        <svg class="btn-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M5 12h14M12 5l7 7-7 7"/>
-                        </svg>
-                    </button>
-                    <button class="btn btn-outline-white">Falar com Especialista</button>
-                </div>
-            </div>
+        <div class="cta-container">
+            <h2 class="cta-title">Pronto para experimentar?</h2>
+            <p class="cta-subtitle">Adquira seu OverBerry e comece a criar receitas incríveis hoje mesmo!</p>
+            <button class="btn-cta">Comprar OverBerry</button>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="footer" id="contato">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <div class="footer-logo">
-                        <h3>Overberry</h3>
-                    </div>
-                    <p class="footer-description">
-                        Levando o melhor do açaí amazônico para sua mesa com qualidade e sustentabilidade.
-                    </p>
-                </div>
+    <div id="footer-container"></div>
 
-                <div class="footer-section">
-                    <h4 class="footer-title">Produtos</h4>
-                    <ul class="footer-links">
-                        <li><a href="#">Açaí Liofilizado</a></li>
-                        <li><a href="#">Kits Receitas</a></li>
-                        <li><a href="#">Assinatura Mensal</a></li>
-                    </ul>
-                </div>
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Voltar ao topo">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="m18 15-6-6-6 6" />
+        </svg>
+    </button>
 
-                <div class="footer-section">
-                    <h4 class="footer-title">Suporte</h4>
-                    <ul class="footer-links">
-                        <li><a href="#">Central de Ajuda</a></li>
-                        <li><a href="#">Contato</a></li>
-                        <li><a href="#">FAQ</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-section">
-                    <h4 class="footer-title">Conecte-se</h4>
-                    <ul class="footer-links">
-                        <li><a href="#">Instagram</a></li>
-                        <li><a href="#">Facebook</a></li>
-                        <li><a href="#">YouTube</a></li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="footer-bottom">
-                <p>&copy; 2024 Overberry. Todos os direitos reservados.</p>
-            </div>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
+    <script src="receitas/script.js"></script>
+    <script src="components/components.js"></script>
 </body>
+
 </html>

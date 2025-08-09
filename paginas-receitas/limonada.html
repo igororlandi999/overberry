@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Limonada de Açaí - OverBerry</title>
+    <link rel="stylesheet" href="../receita-individual/styles.css">
+    <link rel="stylesheet" href="../components/components.css">
+    <meta name="description" content="Receita de Limonada de Açaí refrescante com OverBerry. Bebida única, saborosa e cheia de antioxidantes para se refrescar com estilo.">
+</head>
+
+<body>
+    <!-- Header -->
+    <div id="navbar-container"></div>
+
+    <!-- Recipe Hero -->
+    <section class="recipe-hero">
+        <div class="hero-content">
+            <div class="breadcrumb">
+                <a href="receitas.html">Receitas</a>
+                <span>•</span>
+                <a href="receitas.html?filter=bebidas">Bebidas</a>
+                <span>•</span>
+                <span>Limonada de Açaí</span>
+            </div>
+            
+            <h1 class="recipe-title">Limonada de Açaí</h1>
+            <p class="recipe-subtitle">
+                Uma combinação surpreendente e refrescante! O sabor cítrico do limão encontra os antioxidantes do açaí 
+                OverBerry em uma bebida única, perfeita para dias quentes e momentos especiais.
+            </p>
+            
+            <div class="recipe-meta">
+                <div class="meta-item">
+                    <span class="meta-icon">⏱️</span>
+                    <div class="meta-info">
+                        <span class="meta-label">Tempo</span>
+                        <span class="meta-value">5 minutos</span>
+                    </div>
+                </div>
+                <div class="meta-item">
+                    <span class="meta-icon">👨‍🍳</span>
+                    <div class="meta-info">
+                        <span class="meta-label">Dificuldade</span>
+                        <span class="meta-value">Fácil</span>
+                    </div>
+                </div>
+                <div class="meta-item">
+                    <span class="meta-icon">🍽️</span>
+                    <div class="meta-info">
+                        <span class="meta-label">Porções</span>
+                        <span class="meta-value">2 pessoas</span>
+                    </div>
+                </div>
+                <div class="meta-item">
+                    <span class="meta-icon">🔥</span>
+                    <div class="meta-info">
+                        <span class="meta-label">Calorias</span>
+                        <span class="meta-value">~85 kcal</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recipe Content -->
+    <section class="recipe-content">
+        <div class="content-container">
+            <div class="content-grid">
+                
+                <!-- Main Content -->
+                <div class="main-content">
+                    
+                    <!-- Recipe Image -->
+                    <div class="recipe-image-section">
+                        <div class="image-container">
+                            <img src="../assets/images/limonada.jpg" alt="Limonada de Açaí OverBerry" class="recipe-main-img">
+                            <div class="image-overlay">
+                                <button class="image-expand-btn" aria-label="Expandir imagem">🔍</button>
+                            </div>
+                        </div>
+                        <div class="image-caption">
+                            Limonada de Açaí OverBerry - Refrescância com antioxidantes!
+                        </div>
+                    </div>
+
+                    <!-- Ingredients -->
+                    <div class="recipe-section">
+                        <h2 class="section-title">
+                            <span class="title-icon">🛒</span>
+                            Ingredientes
+                        </h2>
+                        <div class="ingredients-container">
+                            <ul class="ingredients-list" id="ingredientsList">
+                                <li class="ingredient-item" data-ingredient="overberry">
+                                    <input type="checkbox" id="ingredient-1" class="ingredient-checkbox">
+                                    <label for="ingredient-1" class="ingredient-label">
+                                        <span class="ingredient-amount">1 scoop</span>
+                                        <span class="ingredient-name">OverBerry (açaí liofilizado)</span>
+                                    </label>
+                                </li>
+                                <li class="ingredient-item">
+                                    <input type="checkbox" id="ingredient-2" class="ingredient-checkbox">
+                                    <label for="ingredient-2" class="ingredient-label">
+                                        <span class="ingredient-amount">Suco de 2 limões</span>
+                                        <span class="ingredient-name">Limão siciliano fresco</span>
+                                    </label>
+                                </li>
+                                <li class="ingredient-item">
+                                    <input type="checkbox" id="ingredient-3" class="ingredient-checkbox">
+                                    <label for="ingredient-3" class="ingredient-label">
+                                        <span class="ingredient-amount">500ml</span>
+                                        <span class="ingredient-name">Água com gás gelada</span>
+                                    </label>
+                                </li>
+                                <li class="ingredient-item">
+                                    <input type="checkbox" id="ingredient-4" class="ingredient-checkbox">
+                                    <label for="ingredient-4" class="ingredient-label">
+                                        <span class="ingredient-amount">6-8 folhas</span>
+                                        <span class="ingredient-name">Hortelã fresca</span>
+                                    </label>
+                                </li>
+                                <li class="ingredient-item">
+                                    <input type="checkbox" id="ingredient-5" class="ingredient-checkbox">
+                                    <label for="ingredient-5" class="ingredient-label">
+                                        <span class="ingredient-amount">2 colheres sopa</span>
+                                        <span class="ingredient-name">Mel ou xarope de agave</span>
+                                    </label>
+                                </li>
+                                <li class="ingredient-item">
+                                    <input type="checkbox" id="ingredient-6" class="ingredient-checkbox">
+                                    <label for="ingredient-6" class="ingredient-label">
+                                        <span class="ingredient-amount">Cubos</span>
+                                        <span class="ingredient-name">Gelo</span>
+                                    </label>
+                                </li>
+                                <li class="ingredient-item optional">
+                                    <input type="checkbox" id="ingredient-7" class="ingredient-checkbox">
+                                    <label for="ingredient-7" class="ingredient-label">
+                                        <span class="ingredient-amount">1 fatia</span>
+                                        <span class="ingredient-name">Limão para decorar (opcional)</span>
+                                    </label>
+                                </li>
+                                <li class="ingredient-item optional">
+                                    <input type="checkbox" id="ingredient-8" class="ingredient-checkbox">
+                                    <label for="ingredient-8" class="ingredient-label">
+                                        <span class="ingredient-amount">1 pitada</span>
+                                        <span class="ingredient-name">Sal marinho (opcional)</span>
+                                    </label>
+                                </li>
+                                <li class="ingredient-item optional">
+                                    <input type="checkbox" id="ingredient-9" class="ingredient-checkbox">
+                                    <label for="ingredient-9" class="ingredient-label">
+                                        <span class="ingredient-amount">1 colher chá</span>
+                                        <span class="ingredient-name">Açúcar cristal (opcional)</span>
+                                    </label>
+                                </li>
+                            </ul>
+                            
+                            <div class="ingredients-actions">
+                                <button class="btn-shopping-list" id="shoppingListBtn">
+                                    📝 Gerar lista de compras
+                                </button>
+                                <button class="btn-scale-recipe" id="scaleRecipeBtn">
+                                    ⚖️ Ajustar porções
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Instructions -->
+                    <div class="recipe-section">
+                        <h2 class="section-title">
+                            <span class="title-icon">👨‍🍳</span>
+                            Modo de Preparo
+                        </h2>
+                        <div class="instructions-container">
+                            <ol class="instructions-list" id="instructionsList">
+                                <li class="instruction-step">
+                                    <div class="step-number">1</div>
+                                    <div class="step-content">
+                                        <h3 class="step-title">Prepare o concentrado de açaí</h3>
+                                        <p class="step-description">
+                                            Em um copo pequeno, misture 1 scoop de OverBerry com 3-4 colheres de água morna. 
+                                            Mexa bem até formar uma pasta lisa e homogênea, sem grumos.
+                                        </p>
+                                        <div class="step-timer">
+                                            <span class="timer-icon">⏱️</span>
+                                            <span class="timer-text">1 minuto</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                
+                                <li class="instruction-step">
+                                    <div class="step-number">2</div>
+                                    <div class="step-content">
+                                        <h3 class="step-title">Extraia o suco de limão</h3>
+                                        <p class="step-description">
+                                            Lave bem os limões e extraia o suco fresco. Coe para remover sementes 
+                                            e polpa em excesso. Reserve algumas fatias para decoração.
+                                        </p>
+                                        <div class="step-tip">
+                                            <span class="tip-icon">🍋</span>
+                                            <span class="tip-text">Dica: role os limões na bancada antes de espremer!</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                
+                                <li class="instruction-step">
+                                    <div class="step-number">3</div>
+                                    <div class="step-content">
+                                        <h3 class="step-title">Prepare a hortelã</h3>
+                                        <p class="step-description">
+                                            Lave as folhas de hortelã e bata levemente com as mãos para liberar o aroma. 
+                                            Reserve algumas folhas inteiras para decoração e pique as demais grosseiramente.
+                                        </p>
+                                        <div class="step-timer">
+                                            <span class="timer-icon">⏱️</span>
+                                            <span class="timer-text">1 minuto</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                
+                                <li class="instruction-step">
+                                    <div class="step-number">4</div>
+                                    <div class="step-content">
+                                        <h3 class="step-title">Misture os ingredientes base</h3>
+                                        <p class="step-description">
+                                            Em uma jarra, combine o concentrado de açaí, suco de limão, mel e hortelã picada. 
+                                            Misture bem e deixe descansar por 2 minutos para os sabores se integrarem.
+                                        </p>
+                                        <div class="step-tip">
+                                            <span class="tip-icon">🍯</span>
+                                            <span class="tip-text">Ajuste o mel conforme sua preferência de doçura!</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                
+                                <li class="instruction-step">
+                                    <div class="step-number">5</div>
+                                    <div class="step-content">
+                                        <h3 class="step-title">Adicione a água com gás</h3>
+                                        <p class="step-description">
+                                            Despeje lentamente a água com gás gelada, mexendo delicadamente para não perder 
+                                            o gás. A bebida deve ficar com uma bela cor roxa-avermelhada.
+                                        </p>
+                                        <div class="step-timer">
+                                            <span class="timer-icon">⏱️</span>
+                                            <span class="timer-text">30 segundos</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                
+                                <li class="instruction-step">
+                                    <div class="step-number">6</div>
+                                    <div class="step-content">
+                                        <h3 class="step-title">Finalize e ajuste sabores</h3>
+                                        <p class="step-description">
+                                            Prove e ajuste o sabor: mais limão para acidez, mais mel para doçura, 
+                                            ou uma pitada de sal para realçar os sabores. Adicione gelo abundante.
+                                        </p>
+                                        <div class="step-tip">
+                                            <span class="tip-icon">⚖️</span>
+                                            <span class="tip-text">O equilíbrio entre doce, ácido e amargo é fundamental!</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                
+                                <li class="instruction-step">
+                                    <div class="step-number">7</div>
+                                    <div class="step-content">
+                                        <h3 class="step-title">Sirva com estilo</h3>
+                                        <p class="step-description">
+                                            Sirva em copos altos com muito gelo, decore com fatias de limão e folhas de hortelã. 
+                                            Para um toque especial, faça uma borda de açúcar colorido no copo.
+                                        </p>
+                                        <div class="step-tip">
+                                            <span class="tip-icon">🎨</span>
+                                            <span class="tip-text">Sirva imediatamente para manter o gás e a cor vibrante!</span>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+
+                    <!-- Tips -->
+                    <div class="recipe-section">
+                        <h2 class="section-title">
+                            <span class="title-icon">💡</span>
+                            Dicas do Chef
+                        </h2>
+                        <div class="tips-container">
+                            <div class="tip-card">
+                                <div class="tip-icon">🎨</div>
+                                <div class="tip-content">
+                                    <h3 class="tip-title">Cor Perfeita</h3>
+                                    <p class="tip-description">
+                                        Para cor mais intensa, deixe o concentrado de açaí descansar 5 minutos antes de misturar com os outros ingredientes.
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <div class="tip-card">
+                                <div class="tip-icon">❄️</div>
+                                <div class="tip-content">
+                                    <h3 class="tip-title">Temperatura Ideal</h3>
+                                    <p class="tip-description">
+                                        Use ingredientes bem gelados e sirva imediatamente. O contraste de temperatura realça os sabores.
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <div class="tip-card">
+                                <div class="tip-icon">🌿</div>
+                                <div class="tip-content">
+                                    <h3 class="tip-title">Hortelã Fresca</h3>
+                                    <p class="tip-description">
+                                        Hortelã fresca faz toda diferença. Se não tiver, pode substituir por algumas gotas de essência natural.
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <div class="tip-card">
+                                <div class="tip-icon">🥂</div>
+                                <div class="tip-content">
+                                    <h3 class="tip-title">Versão Especial</h3>
+                                    <p class="tip-description">
+                                        Para ocasiões especiais, adicione uma dose de vodka ou gin para criar um coquetel único e sofisticado.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sidebar -->
+                <div class="sidebar">
+                    
+                    <!-- Nutrition Info -->
+                    <div class="sidebar-card">
+                        <h3 class="card-title">
+                            <span class="title-icon">📊</span>
+                            Informações Nutricionais
+                            <small>(por porção)</small>
+                        </h3>
+                        <div class="nutrition-info">
+                            <div class="nutrition-item">
+                                <span class="nutrition-label">Calorias</span>
+                                <span class="nutrition-value">85 kcal</span>
+                            </div>
+                            <div class="nutrition-item">
+                                <span class="nutrition-label">Carboidratos</span>
+                                <span class="nutrition-value">22g</span>
+                            </div>
+                            <div class="nutrition-item">
+                                <span class="nutrition-label">Proteínas</span>
+                                <span class="nutrition-value">1g</span>
+                            </div>
+                            <div class="nutrition-item">
+                                <span class="nutrition-label">Gorduras</span>
+                                <span class="nutrition-value">0.5g</span>
+                            </div>
+                            <div class="nutrition-item">
+                                <span class="nutrition-label">Vitamina C</span>
+                                <span class="nutrition-value">Alto</span>
+                            </div>
+                            <div class="nutrition-item">
+                                <span class="nutrition-label">Antioxidantes</span>
+                                <span class="nutrition-value">Médio</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Benefits -->
+                    <div class="sidebar-card">
+                        <h3 class="card-title">
+                            <span class="title-icon">✨</span>
+                            Benefícios
+                        </h3>
+                        <ul class="benefits-list">
+                            <li class="benefit-item">
+                                <span class="benefit-icon">💧</span>
+                                <span class="benefit-text">Hidratação refrescante</span>
+                            </li>
+                            <li class="benefit-item">
+                                <span class="benefit-icon">🍋</span>
+                                <span class="benefit-text">Rica em vitamina C</span>
+                            </li>
+                            <li class="benefit-item">
+                                <span class="benefit-icon">💜</span>
+                                <span class="benefit-text">Antioxidantes naturais</span>
+                            </li>
+                            <li class="benefit-item">
+                                <span class="benefit-icon">🌿</span>
+                                <span class="benefit-text">Propriedades digestivas</span>
+                            </li>
+                            <li class="benefit-item">
+                                <span class="benefit-icon">☀️</span>
+                                <span class="benefit-text">Perfeita para dias quentes</span>
+                            </li>
+                            <li class="benefit-item">
+                                <span class="benefit-icon">😌</span>
+                                <span class="benefit-text">Efeito refrescante</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Occasions -->
+                    <div class="sidebar-card">
+                        <h3 class="card-title">
+                            <span class="title-icon">🎉</span>
+                            Ocasiões Perfeitas
+                        </h3>
+                        <ul class="benefits-list">
+                            <li class="benefit-item">
+                                <span class="benefit-icon">🏖️</span>
+                                <span class="benefit-text">Dias de calor intenso</span>
+                            </li>
+                            <li class="benefit-item">
+                                <span class="benefit-icon">🏡</span>
+                                <span class="benefit-text">Reuniões familiares</span>
+                            </li>
+                            <li class="benefit-item">
+                                <span class="benefit-icon">🎊</span>
+                                <span class="benefit-text">Festas e confraternizações</span>
+                            </li>
+                            <li class="benefit-item">
+                                <span class="benefit-icon">🥂</span>
+                                <span class="benefit-text">Aperitivo especial</span>
+                            </li>
+                            <li class="benefit-item">
+                                <span class="benefit-icon">🌅</span>
+                                <span class="benefit-text">Tarde relaxante</span>
+                            </li>
+                            <li class="benefit-item">
+                                <span class="benefit-icon">🍹</span>
+                                <span class="benefit-text">Substituição de refrigerantes</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Buy OverBerry -->
+                    <div class="sidebar-card cta-card">
+                        <h3 class="card-title">
+                            <span class="title-icon">🛒</span>
+                            Compre OverBerry
+                        </h3>
+                        <p class="cta-description">
+                            Crie bebidas únicas e refrescantes com o sabor inconfundível do OverBerry!
+                        </p>
+                        <button class="btn-buy-overberry">
+                            Comprar OverBerry
+                        </button>
+                        <div class="product-features">
+                            <div class="feature">✅ 100% Natural</div>
+                            <div class="feature">✅ Liofilizado</div>
+                            <div class="feature">✅ Rico em Antioxidantes</div>
+                        </div>
+                    </div>
+
+                    <!-- Share Recipe -->
+                   <div class="sidebar-card">
+                        <h3 class="card-title">
+                            <span class="title-icon">📤</span>
+                            Compartilhar
+                        </h3>
+                        <div class="share-buttons">
+                            <button class="share-btn whatsapp" data-platform="whatsapp">
+                                <svg class="share-icon" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.864 3.488" />
+                                </svg>
+                                WhatsApp
+                            </button>
+
+                            <button class="share-btn facebook" data-platform="facebook">
+                                <svg class="share-icon" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                                </svg>
+                                Facebook
+                            </button>
+
+                            <button class="share-btn instagram" data-platform="instagram">
+                                <svg class="share-icon" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                                </svg>
+                                Instagram
+                            </button>
+
+                            <button class="share-btn copy" data-platform="copy">
+                                <svg class="share-icon" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z" />
+                                </svg>
+                                Copiar Link
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Recipes -->
+    <section class="related-recipes">
+        <div class="related-container">
+            <h2 class="related-title">Receitas Relacionadas</h2>
+            <div class="related-grid">
+                <div class="related-card">
+                    <img src="../assets/images/agua.jpg" alt="Água Saborizada" class="related-img">
+                    <h3 class="related-name">Água Saborizada Açaí</h3>
+                    <p class="related-category">Bebidas</p>
+                </div>
+                <div class="related-card">
+                    <img src="../assets/images/bubble.jpg" alt="Bubble Tea" class="related-img">
+                    <h3 class="related-name">Bubble Tea de Açaí</h3>
+                    <p class="related-category">Bebidas</p>
+                </div>
+                <div class="related-card">
+                    <img src="../assets/images/vitamina.jpg" alt="Vitamina Pré-Treino" class="related-img">
+                    <h3 class="related-name">Vitamina Pré-Treino</h3>
+                    <p class="related-category">Bebidas</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <div id="footer-container"></div>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Voltar ao topo">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="m18 15-6-6-6 6" />
+        </svg>
+    </button>
+
+    <script src="../receita-individual/script.js"></script>
+    <script src="../components/components.js"></script>
+</body>
+
+</html>
