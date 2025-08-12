@@ -215,9 +215,12 @@ body {
 }
 
 @keyframes floatUpDown {
-    0%, 100% {
+
+    0%,
+    100% {
         transform: translateY(0px);
     }
+
     50% {
         transform: translateY(-15px);
     }
@@ -266,9 +269,12 @@ body {
 }
 
 @keyframes pulse {
-    0%, 100% {
+
+    0%,
+    100% {
         transform: translateX(-50%) scale(1);
     }
+
     50% {
         transform: translateX(-50%) scale(1.05);
     }
@@ -1271,32 +1277,33 @@ body {
 
 /* Responsive Design */
 @media (max-width: 1024px) {
+
     .product-hero-content,
     .details-grid,
     .ingredients-content {
         grid-template-columns: 1fr;
         gap: 2rem;
     }
-    
+
     .product-hero-info {
         padding-left: 0;
         text-align: center;
     }
-    
+
     .product-title {
         font-size: 2.5rem;
     }
-    
+
     .usage-grid {
         grid-template-columns: repeat(2, 1fr);
     }
-    
+
     .steps-list {
         flex-direction: column;
         align-items: center;
         gap: 2rem;
     }
-    
+
     .step-item:not(:last-child)::after {
         content: '↓';
         top: auto;
@@ -1304,10 +1311,38 @@ body {
         right: 50%;
         transform: translateX(50%);
     }
-    
+
     .cta-actions {
         flex-direction: column;
         align-items: center;
+    }
+
+    @media (max-width: 1024px) {
+        .steps-list {
+            flex-direction: column;
+            align-items: center;
+            gap: 4rem;
+            position: relative;
+        }
+
+        .step-item {
+            position: relative;
+            width: 100%;
+            max-width: 280px;
+        }
+
+        .step-item:not(:last-child)::after {
+            content: '↓';
+            position: absolute;
+            top: 80%;
+            left: 49%;
+            transform: translate(-50%, 2rem);
+            /* Aumentar para 2rem = bem no meio */
+            color: #10b981;
+            font-size: 1.5rem;
+            font-weight: bold;
+            z-index: 1;
+        }
     }
 }
 
@@ -1422,54 +1457,54 @@ body {
         padding: 1rem 1rem 2rem;
         min-height: calc(100vh - 80px);
     }
-    
+
     .product-title {
         font-size: 1.75rem;
     }
-    
+
     .section-title,
     .cta-title {
         font-size: 1.75rem;
     }
-    
+
     .product-highlights {
         grid-template-columns: 1fr;
         gap: 0.5rem;
     }
-    
+
     .highlight-item {
         padding: 0.625rem;
         font-size: 0.8rem;
     }
-    
+
     .highlight-icon {
         font-size: 1.125rem;
     }
-    
+
     .image-container {
         max-width: 320px;
     }
-    
+
     .details-card,
     .process-info {
         padding: 1.5rem;
     }
-    
+
     .preparation-steps {
         padding: 2rem;
     }
-    
+
     .ingredient-item {
         padding: 1.5rem;
         flex-direction: column;
         text-align: center;
         gap: 1rem;
     }
-    
+
     .final-cta {
         padding: 3rem 1rem;
     }
-    
+
     .back-to-top {
         bottom: 1.5rem;
         right: 1.5rem;
@@ -1501,6 +1536,7 @@ body {
         opacity: 0;
         transform: translateY(30px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);

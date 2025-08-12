@@ -17,9 +17,6 @@ class OverBerryComponents {
     /**
      * Cria o HTML da Navbar
      */
-    /**
-   * Cria o HTML da Navbar
-   */
     static createNavbar() {
         // Detecta se está em subpasta
         const isInSubfolder = window.location.pathname.includes('/paginas-receitas/') ||
@@ -32,11 +29,11 @@ class OverBerryComponents {
                 <!-- Logo -->
                 <div class="logo" onclick="window.location.href='${basePath}index.html'">OverBerry</div>
 
-                <!-- Navigation Menu -->
+                <!-- Navigation Menu - ORDEM CORRIGIDA -->
                 <div class="nav-menu" id="navMenu">
                     <a href="${basePath}index.html#inicio" class="nav-link">Início</a>
-                    <a href="${basePath}index.html#beneficios" class="nav-link">Benefícios</a>
                     <a href="${basePath}index.html#produto" class="nav-link">Produto</a>
+                    <a href="${basePath}index.html#beneficios" class="nav-link">Benefícios</a>
                     <a href="${basePath}index.html#receitas" class="nav-link">Receita</a>
                     <a href="${basePath}index.html#sobre" class="nav-link">Sobre</a>
                     <a href="${basePath}index.html#contato" class="nav-link">Contato</a>
@@ -55,6 +52,7 @@ class OverBerryComponents {
         </header>
     `;
     }
+    
     /**
      * Cria o HTML do Footer
      */
@@ -238,9 +236,6 @@ class OverBerryComponents {
     /**
      * Inicializa os botões
      */
-    /**
-  * Inicializa os botões
-  */
     static initButtons() {
         // Detecta se está em subpasta
         const isInSubfolder = window.location.pathname.includes('/paginas-receitas/') ||
@@ -254,8 +249,6 @@ class OverBerryComponents {
                 window.location.href = basePath + 'acai-liofilizado.html';
             });
         });
-
-        // resto do código continua igual...
 
         // Social buttons
         const socialButtons = document.querySelectorAll('.social-btn');
