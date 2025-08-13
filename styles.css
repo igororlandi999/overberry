@@ -1,4 +1,7 @@
 /* Reset completo */
+/* ===== SUBSTITUIR A SEÇÃO BODY NO styles.css ===== */
+
+/* Reset completo */
 * {
     margin: 0;
     padding: 0;
@@ -10,6 +13,7 @@
     display: none !important;
 }
 
+/* ===== BODY OTIMIZADO PARA iOS ===== */
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     min-height: 100vh;
@@ -22,21 +26,46 @@ body {
     overflow-x: hidden;
 }
 
-/* Fallback para iOS e mobile */
-@supports (-webkit-touch-callout: none) {
+/* ===== FIX ESPECÍFICO PARA iOS/iPhone ===== */
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
     body {
         background-attachment: scroll !important;
+        background-size: cover !important;
     }
 }
 
+/* ===== MOBILE OTIMIZADO ===== */
 @media (max-width: 768px) {
     body {
-        background-attachment: scroll;
+        background-attachment: scroll !important;
+        background-size: cover;
+        background-position: center center;
+        min-height: 100vh;
+        height: auto;
     }
 }
 
+/* ===== WEBKIT/iOS ESPECÍFICO ===== */
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
+    body {
+        background-attachment: scroll !important;
+        -webkit-background-size: cover;
+        background-size: cover;
+    }
+}
 
-/* Overlay escuro sobre a imagem de fundo */
+/* ===== iPhone específico ===== */
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+    body {
+        background-attachment: scroll !important;
+        background-size: cover;
+        background-position: center;
+        min-height: 100vh;
+        height: 100%;
+    }
+}
+
+/* Overlay escuro sobre a imagem de fundo - ATUALIZADO */
 body::before {
     content: '';
     position: fixed;
@@ -48,6 +77,17 @@ body::before {
     z-index: 1;
     display: block !important;
 }
+
+/* ===== MOBILE: Overlay usando absolute em vez de fixed ===== */
+@media (max-width: 768px) {
+    body::before {
+        position: absolute !important;
+        min-height: 100vh;
+        height: 100%;
+    }
+}
+
+/* ===== RESTO DO CSS PERMANECE IGUAL... ===== */
 
 /* Header */
 .header {

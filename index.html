@@ -1,6 +1,6 @@
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no">
 
     <title>OverBerry – Açaí Liofilizado 100% Natural | Antioxidantes e Energia</title>
     <meta name="description"
@@ -32,6 +32,11 @@
     <meta name="twitter:title" content="OverBerry – Açaí Liofilizado 100% Natural">
     <meta name="twitter:description" content="Rico em antioxidantes. Ideal para smoothies e receitas.">
     <meta name="twitter:image" content="https://overberry.com.br/assets/images/og-overberry.jpg">
+
+    <!-- ===== ADICIONAR TAMBÉM ESTAS META TAGS PARA iOS ===== -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="format-detection" content="telephone=no">
 
     <!-- Structured Data (Organization + Website Search) -->
     <script type="application/ld+json">
@@ -66,6 +71,34 @@
     }
   }
   </script>
+
+    <!-- ===== CSS INLINE CRÍTICO PARA iOS (adicionar no <head>) ===== -->
+    <style>
+        /* CSS crítico para iOS background */
+        @supports (-webkit-overflow-scrolling: touch) {
+            body {
+                background-attachment: scroll !important;
+                background-size: cover !important;
+            }
+        }
+
+        /* iPhone landscape fix */
+        @media screen and (orientation: landscape) and (max-height: 500px) {
+            body {
+                background-attachment: scroll !important;
+                background-size: cover !important;
+            }
+        }
+
+        /* iOS Safari específico */
+        @media screen and (-webkit-min-device-pixel-ratio: 2) {
+            body {
+                background-attachment: scroll !important;
+                background-size: cover !important;
+            }
+        }
+    </style>
+
 </head>
 
 
