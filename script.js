@@ -132,46 +132,74 @@ function hideLoadingScreen() {
 // Função principal que inicializa a página inicial
 // ===== ADICIONAR NO INÍCIO DO script.js (APÓS DOMContentLoaded) =====
 
-// Fix específico para iOS/iPhone background
+// ===== SUBSTITUIR AS FUNÇÕES fixiOSBackground E addIOSCSS NO script.js =====
+
+// Fix ROBUSTO para iOS/iPhone background
 function fixiOSBackground() {
     const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
     const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
-    const isMobile = window.innerWidth <= 768;
+    const isMobile = window.innerWidth <= 1024;
 
     console.log('🔍 Detectando dispositivo...', {
         isIOS,
         isSafari,
         isMobile,
-        userAgent: navigator.userAgent
+        userAgent: navigator.userAgent,
+        viewport: `${window.innerWidth}x${window.innerHeight}`
     });
 
-    if (isIOS || isMobile) {
-        console.log('📱 Aplicando fix para iOS/Mobile...');
+    // Criar elemento de background separado se não existir
+    let backgroundElement = document.querySelector('.ios-background-fix');
 
-        // Forçar background properties para iOS
-        document.body.style.backgroundAttachment = 'scroll';
-        document.body.style.backgroundSize = 'cover';
-        document.body.style.backgroundPosition = 'center center';
-        document.body.style.backgroundRepeat = 'no-repeat';
-        document.body.style.minHeight = '100vh';
+    if (!backgroundElement) {
+        console.log('📱 Criando elemento de background separado...');
+        backgroundElement = document.createElement('div');
+        backgroundElement.className = 'ios-background-fix';
+        document.body.insertBefore(backgroundElement, document.body.firstChild);
+    }
+
+    // Aplicar estilos específicos para iOS/Mobile
+    if (isIOS || isMobile) {
+        console.log('📱 Aplicando fix específico para iOS/Mobile...');
+
+        // Forçar estilos no elemento de background
+        backgroundElement.style.position = 'fixed';
+        backgroundElement.style.top = '0';
+        backgroundElement.style.left = '0';
+        backgroundElement.style.width = '100%';
+        backgroundElement.style.height = '100vh';
+        backgroundElement.style.backgroundSize = 'cover';
+        backgroundElement.style.backgroundPosition = 'center center';
+        backgroundElement.style.backgroundRepeat = 'no-repeat';
+        backgroundElement.style.backgroundAttachment = 'scroll';
+        backgroundElement.style.zIndex = '-10';
+        backgroundElement.style.willChange = 'transform';
+        backgroundElement.style.transform = 'translateZ(0)'; // Hardware acceleration
 
         // Garantir que a imagem seja carregada
         const img = new Image();
         img.onload = function () {
             console.log('✅ Background image carregada com sucesso');
-            document.body.style.backgroundImage = `url('assets/images/backg.png')`;
+            backgroundElement.style.backgroundImage = `url('assets/images/backg.png')`;
         };
         img.onerror = function () {
             console.warn('❌ Erro ao carregar background image');
-            // Fallback com cor sólida
-            document.body.style.background = 'linear-gradient(135deg, #2d1b45 0%, #1e293b 100%)';
+            // Fallback com gradiente
+            backgroundElement.style.background = 'linear-gradient(135deg, #2d1b45 0%, #1e293b 100%)';
         };
         img.src = 'assets/images/backg.png';
+
+        // Remover background do body
+        document.body.style.backgroundImage = 'none';
+        document.body.style.background = 'transparent';
 
         // Fix para height do viewport em iOS
         const setViewportHeight = () => {
             const vh = window.innerHeight * 0.01;
             document.documentElement.style.setProperty('--vh', `${vh}px`);
+
+            // Atualizar altura do background
+            backgroundElement.style.height = `${window.innerHeight}px`;
         };
 
         setViewportHeight();
@@ -179,39 +207,75 @@ function fixiOSBackground() {
         window.addEventListener('orientationchange', () => {
             setTimeout(setViewportHeight, 500);
         });
+
+        // Fix adicional para scroll em iOS
+        if (isIOS) {
+            document.body.style.webkitOverflowScrolling = 'touch';
+        }
     }
 }
 
-// Adicionar CSS dinâmico para iOS
+// CSS dinâmico melhorado para iOS
 function addIOSCSS() {
+    // Remover estilo anterior se existir
+    const existingStyle = document.getElementById('ios-background-fix');
+    if (existingStyle) {
+        existingStyle.remove();
+    }
+
     const style = document.createElement('style');
     style.id = 'ios-background-fix';
     style.textContent = `
-        /* iOS Background Fix */
+        /* iOS Background Fix - CSS Dinâmico */
+        .ios-background-fix {
+            position: fixed !important;
+            top: 0 !important;
+            left: 0 !important;
+            width: 100% !important;
+            height: 100vh !important;
+            background-size: cover !important;
+            background-position: center center !important;
+            background-repeat: no-repeat !important;
+            background-attachment: scroll !important;
+            z-index: -10 !important;
+            will-change: transform !important;
+            transform: translateZ(0) !important;
+        }
+        
+        /* Force hardware acceleration em iOS */
         @supports (-webkit-overflow-scrolling: touch) {
-            body {
-                background-attachment: scroll !important;
-                background-size: cover !important;
-            }
-            
-            .hero {
-                height: calc(var(--vh, 1vh) * 100) !important;
-                min-height: calc(var(--vh, 1vh) * 100) !important;
+            .ios-background-fix {
+                -webkit-transform: translateZ(0) !important;
+                -webkit-backface-visibility: hidden !important;
+                backface-visibility: hidden !important;
             }
         }
         
-        /* iPhone específico */
-        @media only screen and (max-width: 812px) and (-webkit-min-device-pixel-ratio: 2) {
-            body {
-                background-attachment: scroll !important;
-                background-size: cover !important;
-                background-position: center center !important;
+        /* Hero section com height corrigido */
+        .hero {
+            height: calc(var(--vh, 1vh) * 100) !important;
+            min-height: calc(var(--vh, 1vh) * 100) !important;
+        }
+        
+        /* Overlay ajustado */
+        body::before {
+            position: fixed !important;
+            height: 100vh !important;
+            z-index: -5 !important;
+        }
+        
+        /* Mobile específico */
+        @media (max-width: 1024px) {
+            .ios-background-fix {
+                position: fixed !important;
+                height: 100vh !important;
             }
-            
-            body::before {
-                position: absolute !important;
-                height: 100% !important;
-                min-height: calc(var(--vh, 1vh) * 100) !important;
+        }
+        
+        /* Landscape fix */
+        @media screen and (orientation: landscape) {
+            .ios-background-fix {
+                height: 100vh !important;
             }
         }
     `;
@@ -220,13 +284,36 @@ function addIOSCSS() {
     console.log('🎨 CSS específico para iOS adicionado');
 }
 
+// Função adicional para verificar se o background está funcionando
+function verifyBackgroundFix() {
+    setTimeout(() => {
+        const backgroundElement = document.querySelector('.ios-background-fix');
+        if (backgroundElement) {
+            const computedStyle = window.getComputedStyle(backgroundElement);
+            console.log('🔍 Verificação do background:', {
+                position: computedStyle.position,
+                backgroundImage: computedStyle.backgroundImage,
+                backgroundSize: computedStyle.backgroundSize,
+                zIndex: computedStyle.zIndex,
+                height: computedStyle.height
+            });
+
+            if (computedStyle.backgroundImage === 'none') {
+                console.warn('⚠️ Background image não carregou - aplicando fallback');
+                backgroundElement.style.background = 'linear-gradient(135deg, #2d1b45 0%, #1e293b 100%)';
+            }
+        }
+    }, 1000);
+}
+
 // ===== MODIFICAR A FUNÇÃO initializeHomePage EXISTENTE =====
 function initializeHomePage() {
     console.log('🚀 Inicializando OverBerry HomePage...');
 
-    // ===== ADICIONAR ESTAS LINHAS NO INÍCIO =====
+    // ===== NOVA SEQUÊNCIA PARA iOS FIX =====
     fixiOSBackground();
     addIOSCSS();
+    verifyBackgroundFix();
 
     // ===== RESTO DA FUNÇÃO PERMANECE IGUAL =====
     waitForComponentsAndSetup();
@@ -234,7 +321,7 @@ function initializeHomePage() {
     setupCardAnimations();
     setupAboutAnimations();
 
-    console.log('✅ HomePage inicializada - aguardando componentes...');
+    console.log('✅ HomePage inicializada com iOS fix melhorado!');
 }
 
 // ===== AGUARDAR E INTEGRAR COM COMPONENTS =====
